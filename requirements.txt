@@ -1,0 +1,14 @@
+# общее
+pillow
+requests
+numpy
+scipy
+tqdm
+
+# модели
+torch
+transformers   # Qwen3-VL требует свежую версию
+accelerate
+bitsandbytes   # для Qwen в 4 битах, нужна видеокарта NVIDIA
+
+
