@@ -12,7 +12,7 @@
 
 ```
 data/
-  photos.jsonl                   наш датасет: 400 фото с источниками и лицензиями
+  sources_and_labels.jsonl       наш датасет: 400 фото с источниками и лицензиями
   exam/dataset.jsonl             экзаменационный набор из Контеста (разметки нет)
   exam/submission-template.jsonl шаблон ответа из Контеста
 labeling/
@@ -44,7 +44,7 @@ scripts/                         проверки
 
 ## Форматы файлов
 
-`data/photos.jsonl` — одна строка на фото:
+`data/sources_and_labels.jsonl` — одна строка на фото:
 
 ```json
 {"photo_id": 123, "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/123/original.jpg", "observation_url": "https://www.inaturalist.org/observations/456", "author": "login", "license": "cc0", "group": "несколько бабочек"}
@@ -92,10 +92,10 @@ _TODO: модель и версия весов, текстовый запрос,
 
 ```bash
 # не пересекается ли наш датасет с экзаменационным
-python scripts/check_overlap.py data/photos.jsonl data/exam/dataset.jsonl
+python scripts/check_overlap.py data/sources_and_labels.jsonl data/exam/dataset.jsonl
 
 # рамки поверх фото: эталон зелёным, предсказания красным
-python scripts/draw_boxes.py data/photos.jsonl --golden golden/golden.jsonl --pred predictions/<файл>.jsonl --sample 20
+python scripts/draw_boxes.py data/sources_and_labels.jsonl --golden golden/golden.jsonl --pred predictions/<файл>.jsonl --sample 20
 
 # корректен ли файл для Контеста
 python scripts/check_submission.py submission/submission.jsonl data/exam/dataset.jsonl
@@ -109,4 +109,4 @@ python scripts/check_submission.py submission/submission.jsonl data/exam/dataset
 
 ## Лицензии
 
-Все фотографии — CC0 из iNaturalist. Авторы и ссылки на наблюдения — в `data/photos.jsonl`.
+Все фотографии — CC0 из iNaturalist. Авторы и ссылки на наблюдения — в `data/sources_and_labels.jsonl`.

@@ -4,7 +4,7 @@ __pycache__/
 venv/
 .ipynb_checkpoints/
 .DS_Store
-
+local/
 
 *.pt
 *.safetensors

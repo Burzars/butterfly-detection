@@ -1,7 +1,7 @@
 """Проверка, что наш датасет не пересекается с экзаменационным.
 
 Использование:
-    python scripts/check_overlap.py data/photos.jsonl data/exam/dataset.jsonl
+    python scripts/check_overlap.py data/sources_and_labels.jsonl data/exam/dataset.jsonl
 
 Сравнивает photo_id. Код выхода 1, если пересечение есть.
 """

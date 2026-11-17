@@ -3,9 +3,9 @@
 Эталон рисуется зелёным, предсказания красным (с уверенностью, если она есть).
 
 Использование:
-    python scripts/draw_boxes.py data/photos.jsonl --golden golden/golden.jsonl --sample 20
-    python scripts/draw_boxes.py data/photos.jsonl --pred predictions/gdino.jsonl --ids 123 456
-    python scripts/draw_boxes.py data/photos.jsonl --golden golden/golden.jsonl --pred predictions/gdino.jsonl --sample 30
+    python scripts/draw_boxes.py data/sources_and_labels.jsonl --golden golden/golden.jsonl --sample 20
+    python scripts/draw_boxes.py data/sources_and_labels.jsonl --pred predictions/gdino.jsonl --ids 123 456
+    python scripts/draw_boxes.py data/sources_and_labels.jsonl --golden golden/golden.jsonl --pred predictions/gdino.jsonl --sample 30
 
 Картинки берутся из папки --images (файл <photo_id>.<расширение>), а если там нет — скачиваются по photo_url.
 Результат — в папке --out (по умолчанию viz/).
