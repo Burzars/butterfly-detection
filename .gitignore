@@ -5,6 +5,7 @@ venv/
 .ipynb_checkpoints/
 .DS_Store
 local/
+viz/
 
 *.pt
 *.safetensors

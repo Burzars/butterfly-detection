@@ -44,13 +44,13 @@ scripts/                         проверки
 
 ## Форматы файлов
 
-`data/sources_and_labels.jsonl` — одна строка на фото:
+`data/sources_and_labels.jsonl` — одна строка на фото. Основные поля (полный список — в `data/README.md`):
 
 ```json
-{"photo_id": 123, "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/123/original.jpg", "observation_url": "https://www.inaturalist.org/observations/456", "author": "login", "license": "cc0", "group": "несколько бабочек"}
+{"photo_id": 764266940, "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/764266940/original.jpg", "observation_url": "https://www.inaturalist.org/observations/415089031", "observer_login": "galpinmd", "license_code": "cc0", "source_group": "butterflies", "preliminary_label": "бабочка", "tags": ["маскировка", "земля или камень"]}
 ```
 
-`group` — категория, по которой фото попало в выборку; по ней считаются метрики по группам.
+`source_group` — группа, из которой фото попало в выборку: `butterflies`, `moths`, `beetles`, `bees_wasps_ants`, `flies`, `caterpillars`, `plants`. По ней считаются метрики по группам. `preliminary_label` и `tags` — предварительный просмотр при сборе, а не эталон: итоговая разметка — только в `golden/golden.jsonl`.
 
 `golden/golden.jsonl` — итоговая разметка:
 
