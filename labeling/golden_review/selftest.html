@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Самопроверка страницы разбора</title>
+<style>
+  body { font: 18px/1.5 system-ui, sans-serif; margin: 16px; background: #fff; color: #111; }
+  .ok { color: #1a7f37; } .bad { color: #c62828; font-weight: 700; }
+  iframe { width: 1300px; height: 820px; border: 1px solid #ccc; }
+</style>
+</head>
+<body>
+<h1 id="sum">Самопроверка выполняется…</h1>
+<div id="out"></div>
+<iframe id="f"></iframe>
+<script>
+// Открывать через http-сервер из папки local/ (тот же источник, что у index.html).
+// Состояние страницы очищается до и после проверки — реальные решения не затрагиваются,
+// если страница разбора открыта по другому адресу. Не запускайте самопроверку во время разбора.
+(function () {
+  var KEY = 'golden_review_v1', results = [], saved = null;
+  try { saved = localStorage.getItem(KEY); localStorage.removeItem(KEY); } catch (e) {}
+  function check(name, cond, extra) { results.push([name, !!cond, extra || '']); }
+  var TOL = 1e-5;   // стиль хранит проценты примерно с 6 значащими цифрами
+  function near(a, b, tol) { return Math.abs(a - b) < (tol || TOL); }
+  var f = document.getElementById('f');
+  f.addEventListener('load', function () {
+    var w = f.contentWindow, d = w.document;
+    try {
+      var DATA = w.REVIEW_DATA, $ = function (id) { return d.getElementById(id); };
+      var byId = {}; DATA.items.forEach(function (i) { byId[i.photo_id] = i; });
+      var cur = function () { return byId[$('title').textContent.replace('Фото ', '')]; };
+      var store = function () { return JSON.parse(w.localStorage.getItem(KEY) || '{"decisions":{}}').decisions; };
+      var img = $('img');
+      var rr = img.getBoundingClientRect(), px = 2 / Math.min(rr.width, rr.height);   // допуск 2 пикселя для действий мышью
+      function at(type, fx, fy, target) {
+        var r = img.getBoundingClientRect();
+        var e = new w.MouseEvent(type, { bubbles: true, cancelable: true, button: 0,
+          clientX: r.left + fx * r.width, clientY: r.top + fy * r.height });
+        (target || w).dispatchEvent(e);
+      }
+      function boxStyle(el) { return ['left', 'top', 'width', 'height'].map(function (k) { return parseFloat(el.style[k]) / 100; }); }
+
+      var queue = DATA.items.filter(function (i) { return i.must_review; });
+      check('в очереди ' + queue.length + ' фото (ожидалось 63)', d.querySelectorAll('#list [data-i]').length === 63);
+      check('картинка загрузилась', img.naturalWidth > 0, img.src);
+
+      // 1. исходные рамки рисуются в координатах разметчика (берём фото, где рамки есть)
+      var g0 = 0; while (cur().labeler.regions.length === 0 && g0++ < 70) $('next').click();
+      var it1 = cur(), els = d.querySelectorAll('#layer .box');
+      check('фото ' + it1.photo_id + ': рамок на экране столько же, сколько у разметчика (' + els.length + ')', els.length > 0 && els.length === it1.labeler.regions.length);
+      var exact = true;
+      it1.labeler.regions.forEach(function (b, i) { var s = boxStyle(els[i]); if (!(near(s[0], b.left) && near(s[1], b.top) && near(s[2], b.width) && near(s[3], b.height))) exact = false; });
+      check('исходные рамки на экране совпадают с координатами разметчика', exact);
+
+      // 2. нарисовать новую рамку и сохранить «исправлено»
+      var n0 = it1.labeler.regions.length;
+      at('mousedown', 0.20, 0.30, $('stage')); at('mousemove', 0.50, 0.60); at('mouseup', 0.50, 0.60);
+      check('протягивание мышью добавило рамку', d.querySelectorAll('#layer .box').length === n0 + 1);
+      $('who').value = 'Самопроверка'; $('comment').value = 'тест';
+      $('fix').click();
+      var d1 = store()[it1.photo_id];
+      check('решение «исправлено» сохранено', d1 && d1.decision === 'fix');
+      var nb = d1 && d1.boxes[d1.boxes.length - 1];
+      check('новая рамка сохранена в долях кадра (0.2, 0.3, 0.3, 0.3)', nb && near(nb.left, 0.2, px) && near(nb.top, 0.3, px) && near(nb.width, 0.3, px) && near(nb.height, 0.3, px), JSON.stringify(nb));
+      var same = d1 && it1.labeler.regions.every(function (b, i) { var x = d1.boxes[i]; return x.left === b.left && x.top === b.top && x.width === b.width && x.height === b.height; });
+      check('нетронутые рамки сохранены без изменения чисел', same);
+
+      // 3. «Оставить как есть» на следующем фото
+      var it2 = cur();
+      check('после решения открылось следующее фото', it2.photo_id !== it1.photo_id);
+      $('keep').click();
+      var d2 = store()[it2.photo_id];
+      check('решение «оставить» сохранено без рамок', d2 && d2.decision === 'keep' && !d2.boxes);
+
+      // 4. найти фото с рамкой: сдвиг, растяжение, «вернуть как было»
+      var guard = 0;
+      while (cur().labeler.regions.length === 0 && guard++ < 70) $('next').click();
+      var it3 = cur(), b0 = it3.labeler.regions[0];
+      var boxEl = d.querySelectorAll('#layer .box')[0];
+      at('mousedown', b0.left + b0.width / 2, b0.top + b0.height / 2, boxEl);
+      at('mousemove', b0.left + b0.width / 2 + 0.01, b0.top + b0.height / 2 + 0.01); at('mouseup', 0, 0);
+      var s3 = boxStyle(d.querySelectorAll('#layer .box')[0]);
+      var expL = Math.min(b0.left + 0.01, 1 - b0.width), expT = Math.min(b0.top + 0.01, 1 - b0.height);
+      check('перетаскивание сдвигает рамку, размер не меняется', near(s3[0], expL, px) && near(s3[1], expT, px) && near(s3[2], b0.width) && near(s3[3], b0.height), s3.join(', '));
+      check('после изменения показан пунктир исходной рамки', d.querySelectorAll('#layer .ghost').length === it3.labeler.regions.length);
+      var h = d.querySelector('#layer .box.sel .h.se');
+      at('mousedown', expL + b0.width, expT + b0.height, h); at('mousemove', expL + b0.width - 0.02, expT + b0.height - 0.02); at('mouseup', 0, 0);
+      var s4 = boxStyle(d.querySelectorAll('#layer .box')[0]);
+      check('уголок меняет размер рамки', near(s4[2], b0.width - 0.02, 2 * px) && near(s4[3], b0.height - 0.02, 2 * px), s4.join(', '));
+      $('reset').click();
+      var s5 = boxStyle(d.querySelectorAll('#layer .box')[0]);
+      check('«Вернуть как было» восстанавливает рамку разметчика', near(s5[0], b0.left) && near(s5[1], b0.top) && near(s5[2], b0.width), s5.join(', '));
+
+      // 5. «Бабочек нет» без пояснения не сохраняется, с пояснением — сохраняется
+      $('comment').value = '';
+      $('empty').click();
+      check('«Бабочек нет» без пояснения отклонено', !store()[it3.photo_id] && $('msg').textContent.length > 0, $('msg').textContent);
+      $('comment').value = 'тест: убрать рамку';
+      $('empty').click();
+      check('«Бабочек нет» с пояснением сохранено', store()[it3.photo_id] && store()[it3.photo_id].decision === 'empty');
+
+      // 6. «Сохранить рамки» без изменений не принимается
+      var it4 = cur();
+      if (it4.labeler.regions.length) { $('comment').value = 'x'; $('fix').click(); check('«Сохранить рамки» без изменений отклонено', !store()[it4.photo_id]); }
+
+      // 7. фильтр «Исправленные» и файл решений
+      $('filter').value = 'changed'; $('filter').dispatchEvent(new w.Event('change'));
+      check('фильтр «Исправленные» показывает 2 фото', d.querySelectorAll('#list [data-i]').length === 2);
+      var captured = null, OrigBlob = w.Blob;
+      w.Blob = function (parts, opts) { captured = parts.join(''); return new OrigBlob(parts, opts); };
+      w.URL.createObjectURL = function () { return 'about:blank'; };
+      w.HTMLAnchorElement.prototype.click = function () {};
+      $('export').click();
+      var exp = captured && JSON.parse(captured);
+      check('файл решений: формат golden_decisions_v1, 3 решения', exp && exp.schema === 'golden_decisions_v1' && Object.keys(exp.decisions).length === 3,
+            captured && captured.slice(0, 120));
+    } catch (err) {
+      check('исключение при проверке: ' + err.message, false, err.stack);
+    }
+    try { localStorage.removeItem(KEY); if (saved !== null) localStorage.setItem(KEY, saved); } catch (e) {}
+    var bad = results.filter(function (r) { return !r[1]; }).length;
+    document.getElementById('sum').innerHTML = bad ? '<span class="bad">Ошибок: ' + bad + ' из ' + results.length + '</span>'
+                                                   : '<span class="ok">Все проверки пройдены: ' + results.length + '</span>';
+    document.getElementById('out').innerHTML = results.map(function (r) {
+      return '<div class="' + (r[1] ? 'ok' : 'bad') + '">' + (r[1] ? '✓ ' : '✗ ') + r[0] + (r[1] ? '' : ' <small>' + String(r[2]).replace(/</g, '&lt;') + '</small>') + '</div>';
+    }).join('');
+    document.title = bad ? 'FAIL' : 'OK';
+    f.style.display = 'none';
+  });
+  f.src = 'index.html';
+})();
+</script>
+</body>
+</html>

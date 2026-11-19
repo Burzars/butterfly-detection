@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Разбор разметки</title>
+<style>
+  :root {
+    --bg: #f6f6f4; --panel: #ffffff; --text: #1d1d1b; --muted: #6b6b66; --line: #dddcd6;
+    --accent: #1f6feb; --ok: #1a7f37; --warn: #b35900; --bad: #c62828; --box: #00e676; --sel: #ffd600;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--bg); color: var(--text); font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+         display: flex; flex-direction: column; }
+  header { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 8px 16px;
+           background: var(--panel); border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 16px; margin: 0 8px 0 0; }
+  header label { display: flex; gap: 6px; align-items: center; }
+  input[type=text], select, textarea { font: inherit; padding: 4px 6px; border: 1px solid var(--line); border-radius: 4px; background: #fff; color: var(--text); }
+  button { font: inherit; padding: 5px 10px; border: 1px solid var(--line); border-radius: 4px; background: #fff; cursor: pointer; color: var(--text); }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  #progress { color: var(--muted); }
+  main { flex: 1; display: grid; grid-template-columns: 170px 1fr 340px; min-height: 0; }
+  #list { overflow: auto; border-right: 1px solid var(--line); background: var(--panel); }
+  #list div { padding: 3px 10px; cursor: pointer; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  #list div:hover { background: #eef3fd; }
+  #list div.cur { background: #dbe7fd; font-weight: 600; }
+  #list .st { display: inline-block; width: 18px; text-align: center; }
+  #work { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+  #toolbar { display: flex; gap: 8px; align-items: center; padding: 6px 10px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  #scroller { flex: 1; overflow: auto; background: #2b2b2b; min-height: 0; }
+  #stage { position: relative; display: inline-block; margin: 8px; user-select: none; cursor: crosshair; }
+  #img { display: block; pointer-events: none; }
+  .box { position: absolute; border: 2px solid var(--box); box-shadow: 0 0 0 1px rgba(0,0,0,.6); cursor: move; }
+  .box.sel { border-color: var(--sel); }
+  .ghost { position: absolute; border: 2px dashed rgba(255,255,255,.75); pointer-events: none; }
+  .h { position: absolute; width: 12px; height: 12px; background: var(--sel); border: 1px solid #000; }
+  .h.nw { left: -7px; top: -7px; cursor: nwse-resize; } .h.ne { right: -7px; top: -7px; cursor: nesw-resize; }
+  .h.sw { left: -7px; bottom: -7px; cursor: nesw-resize; } .h.se { right: -7px; bottom: -7px; cursor: nwse-resize; }
+  .bn { position: absolute; left: 0; top: -18px; background: var(--box); color: #000; font-size: 11px; padding: 0 4px; }
+  #panel { overflow: auto; padding: 10px 14px; border-left: 1px solid var(--line); background: var(--panel); }
+  #panel h2 { font-size: 15px; margin: 4px 0 8px; }
+  #panel h3 { font-size: 13px; margin: 14px 0 4px; color: var(--muted); font-weight: 600; }
+  #panel p { margin: 4px 0; }
+  .flag { display: inline-block; background: #fff4e5; color: var(--warn); border-radius: 3px; padding: 1px 6px; margin: 2px 0; }
+  .note { background: #eef3fd; border-left: 3px solid var(--accent); padding: 6px 8px; }
+  .v-accept { color: var(--ok); } .v-reject { color: var(--bad); }
+  .muted { color: var(--muted); }
+  #decision { font-weight: 600; }
+  .btns { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
+  #comment { width: 100%; min-height: 64px; resize: vertical; }
+  #msg { color: var(--bad); min-height: 1.4em; }
+  kbd { font: 12px monospace; border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; background: #fafafa; color: var(--text); }
+  button.primary kbd { background: rgba(255,255,255,.2); border-color: rgba(255,255,255,.6); color: #fff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Разбор разметки бабочек</h1>
+  <label>Показывать
+    <select id="filter">
+      <option value="queue">К разбору (обязательные)</option>
+      <option value="todo">К разбору — ещё без решения</option>
+      <option value="changed">Исправленные</option>
+      <option value="unsure">«Не уверен»</option>
+      <option value="all">Все 400 фото</option>
+    </select>
+  </label>
+  <label>Кто разбирает <input type="text" id="who" size="14" placeholder="имя"></label>
+  <span id="progress"></span>
+  <span style="flex:1"></span>
+  <button id="export" class="primary">Сохранить файл решений</button>
+  <label><button id="importBtn">Загрузить файл решений</button><input type="file" id="importFile" accept=".json,application/json" hidden></label>
+</header>
+<main>
+  <nav id="list"></nav>
+  <section id="work">
+    <div id="toolbar">
+      <button id="prev">← Назад</button>
+      <button id="next">Вперёд →</button>
+      <span id="pos" class="muted"></span>
+      <span style="flex:1"></span>
+      <label>Масштаб <input type="range" id="zoom" min="1" max="4" step="0.25" value="1"></label>
+      <span id="zoomv" class="muted">100%</span>
+    </div>
+    <div id="scroller"><div id="stage"><img id="img" alt=""><div id="layer"></div></div></div>
+  </section>
+  <aside id="panel">
+    <h2 id="title"></h2>
+    <div id="info"></div>
+    <h3>Решение</h3>
+    <p id="decision"></p>
+    <textarea id="comment" placeholder="Пояснение: что не так и что исправлено (обязательно при исправлении)"></textarea>
+    <div class="btns">
+      <button id="keep">Оставить как есть <kbd>1</kbd></button>
+      <button id="fix" class="primary">Сохранить рамки <kbd>2</kbd></button>
+      <button id="empty">Бабочек нет <kbd>3</kbd></button>
+      <button id="unsure">Не уверен <kbd>4</kbd></button>
+      <button id="del">Удалить рамку <kbd>Del</kbd></button>
+      <button id="reset">Вернуть как было</button>
+    </div>
+    <p id="msg"></p>
+    <h3>Как рисовать</h3>
+    <p class="muted">Протяните мышью по пустому месту — новая рамка. Рамку можно перетащить, за жёлтые уголки — изменить размер.
+      Рамка — вокруг всех видимых частей бабочки, включая усики и лапки, без большого запаса фона; части за краем кадра не достраивать.
+      Пунктир — исходная рамка разметчика. <kbd>←</kbd> <kbd>→</kbd> — соседнее фото.</p>
+    <p class="muted">Решения сохраняются в этом браузере автоматически, но надёжнее время от времени нажимать «Сохранить файл решений».</p>
+  </aside>
+</main>
+<script src="review_data.js"></script>
+<script>
+(function () {
+  'use strict';
+  var DATA = window.REVIEW_DATA;
+  if (!DATA || !DATA.items) {
+    document.body.innerHTML = '<p style="padding:20px">Рядом со страницей нет review_data.js — запустите prepare_review.py.</p>';
+    return;
+  }
+  var STORE = 'golden_review_v1';     // решения привязаны к photo_id, а не к версии данных
+  var KEYS = ['left', 'top', 'width', 'height'];
+  var $ = function (id) { return document.getElementById(id); };
+  var items = DATA.items;
+  var state = { decisions: {}, who: '' };
+  var visible = [], idx = 0, boxes = [], sel = -1, drag = null, zoom = 1;
+
+  // ---------- хранение ----------
+  function load() {
+    try {
+      var raw = window.localStorage.getItem(STORE);
+      if (raw) { var s = JSON.parse(raw); if (s && s.decisions) state = { decisions: s.decisions, who: s.who || '' }; }
+    } catch (e) { /* хранилище недоступно — работаем без автосохранения */ }
+  }
+  function persist() {
+    try { window.localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) { /* ignore */ }
+  }
+
+  // ---------- рамки ----------
+  function copyBox(b) { return { left: b.left, top: b.top, width: b.width, height: b.height }; }
+  function copyBoxes(list) { return (list || []).map(copyBox); }
+  function sameBoxes(a, b) {
+    if (a.length !== b.length) return false;
+    for (var i = 0; i < a.length; i++) for (var k = 0; k < KEYS.length; k++) if (a[i][KEYS[k]] !== b[i][KEYS[k]]) return false;
+    return true;
+  }
+  function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+  function fromEdges(x0, y0, x1, y1) {
+    var l = clamp(Math.min(x0, x1), 0, 1), r = clamp(Math.max(x0, x1), 0, 1);
+    var t = clamp(Math.min(y0, y1), 0, 1), bt = clamp(Math.max(y0, y1), 0, 1);
+    return { left: l, top: t, width: r - l, height: bt - t };
+  }
+  function point(e) {
+    var r = $('img').getBoundingClientRect();
+    return { x: clamp((e.clientX - r.left) / r.width, 0, 1), y: clamp((e.clientY - r.top) / r.height, 0, 1) };
+  }
+
+  // ---------- список ----------
+  function decisionOf(it) { return state.decisions[it.photo_id]; }
+  function computeVisible() {
+    var f = $('filter').value;
+    visible = items.filter(function (it) {
+      var d = decisionOf(it);
+      if (f === 'all') return true;
+      if (f === 'queue') return it.must_review;
+      if (f === 'todo') return it.must_review && (!d || d.decision === 'unsure');
+      if (f === 'changed') return d && (d.decision === 'fix' || d.decision === 'empty');
+      if (f === 'unsure') return d && d.decision === 'unsure';
+      return true;
+    });
+    if (f === 'queue' || f === 'todo') visible.sort(function (a, b) { return a.priority - b.priority; });
+  }
+  var MARK = { keep: '✓', fix: '✎', empty: '∅', unsure: '?' };
+  function renderList() {
+    var html = visible.map(function (it, i) {
+      var d = decisionOf(it);
+      return '<div data-i="' + i + '"' + (i === idx ? ' class="cur"' : '') + '><span class="st">' +
+        (d ? MARK[d.decision] : (it.must_review ? '•' : '')) + '</span>' + it.photo_id + '</div>';
+    }).join('');
+    $('list').innerHTML = html || '<p class="muted" style="padding:8px">Пусто</p>';
+    var cur = $('list').querySelector('.cur');
+    if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: 'nearest' });
+    var queue = items.filter(function (it) { return it.must_review; });
+    var done = queue.filter(function (it) { var d = decisionOf(it); return d && d.decision !== 'unsure'; }).length;
+    var changed = items.filter(function (it) { var d = decisionOf(it); return d && (d.decision === 'fix' || d.decision === 'empty'); }).length;
+    $('progress').textContent = 'Разобрано ' + done + ' из ' + queue.length + ' обязательных · исправлено ' + changed;
+  }
+
+  // ---------- текущее фото ----------
+  function current() { return visible[idx]; }
+  function originalBoxes(it) { return copyBoxes(it.labeler.regions); }
+  function show(i) {
+    if (!visible.length) { $('title').textContent = 'Нет фото в этом фильтре'; $('info').innerHTML = ''; $('img').removeAttribute('src'); $('layer').innerHTML = ''; return; }
+    idx = clamp(i, 0, visible.length - 1);
+    var it = current(), d = decisionOf(it);
+    boxes = d && d.decision === 'fix' ? copyBoxes(d.boxes) : (d && d.decision === 'empty' ? [] : originalBoxes(it));
+    sel = -1;
+    $('comment').value = d ? (d.comment || '') : '';
+    $('msg').textContent = '';
+    var img = $('img');
+    img.onload = fit;
+    img.onerror = function () {        // локальной копии нет — берём то же фото с iNaturalist
+      if (it.url && img.getAttribute('data-remote') !== '1') { img.setAttribute('data-remote', '1'); img.src = it.url; }
+    };
+    if (DATA.image_base) { img.setAttribute('data-remote', '0'); img.src = DATA.image_base + '/' + it.file; }
+    else { img.setAttribute('data-remote', '1'); img.src = it.url; }   // локальных фото нет — сразу iNaturalist
+    $('pos').textContent = (idx + 1) + ' / ' + visible.length;
+    renderInfo(); renderBoxes(); renderList();
+  }
+  function fit() {
+    var img = $('img'), sc = $('scroller');
+    if (!img.naturalWidth) return;
+    var k = Math.min((sc.clientWidth - 16) / img.naturalWidth, (sc.clientHeight - 16) / img.naturalHeight);
+    img.style.width = Math.max(50, Math.floor(img.naturalWidth * k * zoom)) + 'px';
+    img.style.height = 'auto';
+  }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function renderInfo() {
+    var it = current(), d = decisionOf(it);
+    $('title').textContent = 'Фото ' + it.photo_id;
+    var lab = it.labeler.status === 'objects' ? 'бабочки есть, рамок: ' + it.labeler.regions.length : 'бабочек нет';
+    var votes = it.votes.map(function (v) {
+      return '<span class="v-' + v.verdict + '">' + (v.verdict === 'accept' ? 'верно' : 'неверно') + '</span>' +
+        (v.blocked ? ' <span class="muted">(ревьюер заблокирован)</span>' : '') + ' <span class="muted">' + esc(v.reviewer) + '</span>';
+    }).join('<br>') || '<span class="muted">нет</span>';
+    var flags = it.flags.map(function (f) { return '<span class="flag">' + esc(DATA.flag_names[f] || f) + '</span>'; }).join('<br>');
+    var pre = it.prelim.label ? esc(it.prelim.label) + (it.prelim.count != null ? ', количество: ' + it.prelim.count : '') : '—';
+    var html = '';
+    if (flags) html += '<p>' + flags + '</p>';
+    html += '<h3>Разметчик</h3><p>' + lab + '</p>';
+    html += '<h3>Ревьюеры</h3><p>' + votes + '</p>';
+    html += '<h3>Предварительная метка датасета</h3><p>' + pre + '</p>';
+    if (it.tags.length) html += '<p class="muted">' + esc(it.tags.join(', ')) + '</p>';
+    if (it.note) html += '<h3>Подсказка Claude (не решение)</h3><p class="note">' + esc(it.note) + '</p>';
+    if (it.observation_url) html += '<p><a href="' + esc(it.observation_url) + '" target="_blank" rel="noopener">Наблюдение на iNaturalist</a></p>';
+    $('info').innerHTML = html;
+    var names = { keep: 'оставить как есть', fix: 'исправлено', empty: 'бабочек нет', unsure: 'не уверен' };
+    $('decision').textContent = d ? names[d.decision] + (d.decided_by ? ' — ' + d.decided_by : '') : 'ещё не принято';
+  }
+  function pct(v) { return (v * 100) + '%'; }
+  function place(el, b) { el.style.left = pct(b.left); el.style.top = pct(b.top); el.style.width = pct(b.width); el.style.height = pct(b.height); }
+  function renderBoxes() {
+    var layer = $('layer'), it = current();
+    layer.innerHTML = '';
+    var orig = originalBoxes(it);
+    if (!sameBoxes(orig, boxes)) orig.forEach(function (b) { var g = document.createElement('div'); g.className = 'ghost'; place(g, b); layer.appendChild(g); });
+    boxes.forEach(function (b, i) {
+      var el = document.createElement('div');
+      el.className = 'box' + (i === sel ? ' sel' : '');
+      el.setAttribute('data-i', i);
+      place(el, b);
+      var n = document.createElement('span'); n.className = 'bn'; n.textContent = i + 1; el.appendChild(n);
+      if (i === sel) ['nw', 'ne', 'sw', 'se'].forEach(function (c) {
+        var h = document.createElement('div'); h.className = 'h ' + c; h.setAttribute('data-h', c); el.appendChild(h);
+      });
+      layer.appendChild(el);
+    });
+  }
+
+  // ---------- мышь ----------
+  $('stage').addEventListener('mousedown', function (e) {
+    if (e.button !== 0 || !visible.length) return;
+    e.preventDefault();
+    var p = point(e), t = e.target;
+    var hc = t.getAttribute && t.getAttribute('data-h');
+    var boxEl = t.closest ? t.closest('.box') : null;
+    if (hc && boxEl) {
+      sel = +boxEl.getAttribute('data-i');
+      drag = { mode: 'resize', corner: hc, start: copyBox(boxes[sel]) };
+    } else if (boxEl) {
+      sel = +boxEl.getAttribute('data-i');
+      drag = { mode: 'move', p0: p, start: copyBox(boxes[sel]) };
+    } else {
+      boxes.push({ left: p.x, top: p.y, width: 0, height: 0 });
+      sel = boxes.length - 1;
+      drag = { mode: 'draw', p0: p };
+    }
+    renderBoxes();
+  });
+  window.addEventListener('mousemove', function (e) {
+    if (!drag) return;
+    var p = point(e), b;
+    if (drag.mode === 'draw') {
+      boxes[sel] = fromEdges(drag.p0.x, drag.p0.y, p.x, p.y);
+    } else if (drag.mode === 'move') {
+      b = drag.start;
+      boxes[sel] = { left: clamp(b.left + p.x - drag.p0.x, 0, 1 - b.width), top: clamp(b.top + p.y - drag.p0.y, 0, 1 - b.height), width: b.width, height: b.height };
+    } else {
+      b = drag.start;
+      var x0 = b.left, y0 = b.top, x1 = b.left + b.width, y1 = b.top + b.height;
+      if (drag.corner.indexOf('w') >= 0) x0 = p.x; else x1 = p.x;
+      if (drag.corner.indexOf('n') >= 0) y0 = p.y; else y1 = p.y;
+      boxes[sel] = fromEdges(x0, y0, x1, y1);
+    }
+    renderBoxes();
+  });
+  window.addEventListener('mouseup', function () {
+    if (!drag) return;
+    var b = boxes[sel];
+    if (drag.mode === 'draw' && (b.width < 0.004 || b.height < 0.004)) { boxes.splice(sel, 1); sel = -1; }
+    else if (drag.mode !== 'draw' && (b.width < 0.004 || b.height < 0.004)) { boxes[sel] = drag.start; }
+    drag = null;
+    renderBoxes();
+  });
+
+  // ---------- решения ----------
+  function who() { var w = $('who').value.trim(); state.who = w; persist(); return w; }
+  function decide(kind) {
+    var it = current(); if (!it) return;
+    var w = who(), comment = $('comment').value.trim(), msg = '';
+    if (!w) msg = 'Укажите вверху, кто разбирает.';
+    else if (kind === 'fix' && !boxes.length) msg = 'Нет ни одной рамки. Если бабочек нет — нажмите «Бабочек нет».';
+    else if (kind === 'fix' && sameBoxes(boxes, originalBoxes(it))) msg = 'Рамки не менялись — нажмите «Оставить как есть».';
+    else if (kind === 'fix' && !comment) msg = 'Напишите пояснение к исправлению.';
+    else if (kind === 'empty' && it.labeler.regions.length && !comment) msg = 'Напишите пояснение: почему рамки разметчика убраны.';
+    if (msg) { $('msg').textContent = msg; return; }
+    if ((kind === 'keep' || kind === 'unsure') && !sameBoxes(boxes, originalBoxes(it)) &&
+        !window.confirm('Рамки на экране изменены. Отбросить изменения и оставить рамки разметчика?')) return;
+    var d = { decision: kind, comment: comment, decided_by: w, decided_at: new Date().toISOString() };
+    if (kind === 'fix') d.boxes = copyBoxes(boxes);
+    state.decisions[it.photo_id] = d;
+    persist();
+    computeVisible();
+    var pos = visible.indexOf(it);
+    if (pos < 0) show(idx);            // фото ушло из фильтра — остаёмся на той же позиции
+    else show(pos + 1 < visible.length ? pos + 1 : pos);
+  }
+  $('keep').onclick = function () { decide('keep'); };
+  $('fix').onclick = function () { decide('fix'); };
+  $('empty').onclick = function () { boxes = []; sel = -1; renderBoxes(); decide('empty'); };
+  $('unsure').onclick = function () { decide('unsure'); };
+  $('del').onclick = function () { if (sel >= 0) { boxes.splice(sel, 1); sel = -1; renderBoxes(); } };
+  $('reset').onclick = function () {
+    var it = current(); if (!it) return;
+    delete state.decisions[it.photo_id]; persist();
+    computeVisible(); var pos = visible.indexOf(it); show(pos >= 0 ? pos : idx);
+  };
+
+  // ---------- клавиши, навигация ----------
+  document.addEventListener('keydown', function (e) {
+    var tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'textarea' || tag === 'input' || tag === 'select') return;
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    else if (e.key === 'ArrowRight') show(idx + 1);
+    else if (e.key === 'Delete' || e.key === 'Backspace') { if (sel >= 0) { boxes.splice(sel, 1); sel = -1; renderBoxes(); e.preventDefault(); } }
+    else if (e.key === 'Escape') { sel = -1; renderBoxes(); }
+    else if (e.key === '1') decide('keep');
+    else if (e.key === '2') decide('fix');
+    else if (e.key === '3') $('empty').onclick();
+    else if (e.key === '4') decide('unsure');
+  });
+  $('prev').onclick = function () { show(idx - 1); };
+  $('next').onclick = function () { show(idx + 1); };
+  $('list').addEventListener('click', function (e) { var el = e.target.closest('[data-i]'); if (el) show(+el.getAttribute('data-i')); });
+  $('filter').onchange = function () { computeVisible(); show(0); };
+  $('zoom').oninput = function () { zoom = +this.value; $('zoomv').textContent = Math.round(zoom * 100) + '%'; fit(); };
+  window.addEventListener('resize', fit);
+
+  // ---------- файл решений ----------
+  $('export').onclick = function () {
+    var out = { schema: 'golden_decisions_v1', exported_at: new Date().toISOString(), review_data: DATA.generated_at, decisions: state.decisions };
+    var blob = new Blob([JSON.stringify(out, null, 1)], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'golden_decisions.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  };
+  $('importBtn').onclick = function () { $('importFile').click(); };
+  $('importFile').onchange = function () {
+    var f = this.files && this.files[0]; if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      try {
+        var d = JSON.parse(r.result);
+        if (!d || d.schema !== 'golden_decisions_v1' || typeof d.decisions !== 'object') throw new Error('не тот формат');
+        var n = Object.keys(d.decisions).length;
+        if (!window.confirm('Заменить текущие решения решениями из файла (' + n + ' шт.)?')) return;
+        state.decisions = d.decisions; persist(); computeVisible(); show(0);
+      } catch (err) { window.alert('Не удалось прочитать файл: ' + err.message); }
+    };
+    r.readAsText(f);
+    this.value = '';
+  };
+
+  // ---------- старт ----------
+  load();
+  $('who').value = state.who;
+  computeVisible();
+  show(0);
+})();
+</script>
+</body>
+</html>

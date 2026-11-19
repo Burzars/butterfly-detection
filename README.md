@@ -18,9 +18,12 @@ data/
 labeling/
   bbox/                          проект разметки рамок: инструкция, настройки, сырые ответы
   review/                        проект проверки: инструкция, настройки, вердикты
-  corrections.jsonl              ручные исправления с пояснениями
+  golden_review/                 разбор спорных ответов и сборка golden set
   costs.md                       расходы по этапам
-golden/golden.jsonl              итоговая проверенная разметка
+golden/
+  golden.jsonl                   итоговая проверенная разметка
+  corrections.jsonl              исправления с пояснениями (то же таблицей — corrections.md)
+  golden_audit.jsonl             история каждого фото: разметка, вердикты, решение
 models/                          код запуска моделей
 predictions/                     предсказания всех моделей и конфигураций, журнал ошибок
 eval/                            подсчёт метрик и лидерборд
@@ -50,7 +53,7 @@ scripts/                         проверки
 {"photo_id": 764266940, "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/764266940/original.jpg", "observation_url": "https://www.inaturalist.org/observations/415089031", "observer_login": "galpinmd", "license_code": "cc0", "source_group": "butterflies", "preliminary_label": "бабочка", "tags": ["маскировка", "земля или камень"]}
 ```
 
-`source_group` — группа, из которой фото попало в выборку: `butterflies`, `moths`, `beetles`, `bees_wasps_ants`, `flies`, `caterpillars`, `plants`. По ней считаются метрики по группам. `preliminary_label` и `tags` — предварительный просмотр при сборе, а не эталон: итоговая разметка — только в `golden/golden.jsonl`.
+`source_group` — группа, из которой фото попало в выборку: `butterflies`, `moths`, `beetles`, `bees_wasps_ants`, `flies`, `caterpillars`, `plants`. По ней считаются метрики по группам. `preliminary_label` и `tags` — предварительный просмотр при сборе: их ставила модель GPT-6 Astra (см. `data/README.md`), это не эталон. Итоговая разметка — только в `golden/golden.jsonl`.
 
 `golden/golden.jsonl` — итоговая разметка:
 

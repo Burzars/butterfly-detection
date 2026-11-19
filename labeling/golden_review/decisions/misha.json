@@ -1,0 +1,205 @@
+{
+ "schema": "golden_decisions_v1",
+ "exported_at": "2026-11-19T13:48:32.809Z",
+ "review_data": "2026-11-19T11:16:28+00:00",
+ "decisions": {
+  "761383748": {
+   "decision": "fix",
+   "comment": "прижал рамку",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:35:40.524Z",
+   "boxes": [
+    {
+     "left": 0.1782178217821782,
+     "top": 0.2715200185409935,
+     "width": 0.5965346534653466,
+     "height": 0.5811634666877301
+    }
+   ]
+  },
+  "761421803": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:40:11.327Z"
+  },
+  "761726737": {
+   "decision": "fix",
+   "comment": "прижал рамки",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:44:41.237Z",
+   "boxes": [
+    {
+     "left": 0.09405940594059406,
+     "top": 0,
+     "width": 0.6646039603960396,
+     "height": 0.8650474422442245
+    }
+   ]
+  },
+  "761792971": {
+   "decision": "fix",
+   "comment": "прижал рамку",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:43:26.848Z",
+   "boxes": [
+    {
+     "left": 0.29826732673267325,
+     "top": 0.2231332508250825,
+     "width": 0.27599009900990096,
+     "height": 0.30528052805280526
+    }
+   ]
+  },
+  "762339277": {
+   "decision": "fix",
+   "comment": "прижал рамки",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:44:07.364Z",
+   "boxes": [
+    {
+     "left": 0.3712871287128713,
+     "top": 0.3650186185003185,
+     "width": 0.26025630850733417,
+     "height": 0.2607548963511666
+    }
+   ]
+  },
+  "762478784": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:19:27.204Z"
+  },
+  "762482601": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:39:05.546Z"
+  },
+  "762928498": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:26:18.345Z"
+  },
+  "762931036": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:23:05.786Z"
+  },
+  "763006734": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:41:12.564Z"
+  },
+  "763006809": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:27:08.775Z"
+  },
+  "763029167": {
+   "decision": "keep",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:36:04.610Z"
+  },
+  "763283647": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:27:21.219Z"
+  },
+  "763357868": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:24:05.171Z"
+  },
+  "763485227": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:32:17.910Z"
+  },
+  "763747580": {
+   "decision": "fix",
+   "comment": "плотнее прижал рамку к бабочке",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:33:50.090Z",
+   "boxes": [
+    {
+     "left": 0.0655940594059406,
+     "top": 0.272638201320132,
+     "width": 0.9344059405940595,
+     "height": 0.6320132013201321
+    }
+   ]
+  },
+  "763753198": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:26:03.937Z"
+  },
+  "763918593": {
+   "decision": "fix",
+   "comment": "прижал рамку плотнее",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:34:45.116Z",
+   "boxes": [
+    {
+     "left": 0.29455445544554454,
+     "top": 0.1043213696369637,
+     "width": 0.36509900990099015,
+     "height": 0.8366336633663366
+    }
+   ]
+  },
+  "763949216": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:42:09.963Z"
+  },
+  "764001981": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:28:18.048Z"
+  },
+  "764040055": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:40:15.254Z"
+  },
+  "764040135": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:26:09.243Z"
+  },
+  "764319839": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:23:45.767Z"
+  },
+  "764364630": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:15:18.889Z"
+  },
+  "764364656": {
+   "decision": "empty",
+   "comment": "",
+   "decided_by": "Михаил",
+   "decided_at": "2026-11-19T13:36:33.750Z"
+  }
+ }
+}
