@@ -17,6 +17,14 @@
 - `final_dataset_400_by_class/` — те же фото в двух подпапках: `01_Бабочки` (240) и `02_Не_бабочки` (160).
 - `sources_and_labels.jsonl` — одна строка JSON на фотографию: photo_id, observation_id, ссылки, автор, лицензия, таксон источника, размеры, SHA-256, пути к трём копиям в пакете и результаты предварительного обзора. Поле `label` оставлено null для совместимости с исходными данными; предварительный класс записан в `preliminary_label`. Поле `annotation_status` (`pending_bbox_and_independent_review`) осталось со времени сбора: разметка и ревью с тех пор проведены, итог — `golden/golden.jsonl`.
 
+Пример строки `sources_and_labels.jsonl` (основные поля):
+
+```json
+{"photo_id": 764266940, "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/764266940/original.jpg", "observation_url": "https://www.inaturalist.org/observations/415089031", "observer_login": "galpinmd", "license_code": "cc0", "source_group": "butterflies", "preliminary_label": "бабочка", "tags": ["маскировка", "земля или камень"]}
+```
+
+`source_group` — группа, из которой фото попало в выборку, в порядке таблицы ниже: `butterflies`, `moths`, `beetles`, `bees_wasps_ants`, `flies`, `caterpillars`, `plants`. По ней считаются метрики по группам (`eval/evaluate.py --by source_group`). Фото скачиваются по `photo_url` скриптом `scripts/download_images.py`.
+
 ## Состав
 
 | Группа | Фото | Предварительный класс |

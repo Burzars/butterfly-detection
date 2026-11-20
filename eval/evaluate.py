@@ -27,7 +27,7 @@ TP, FP и FN суммируются по всему набору, затем F1 
     # проверка самого скрипта: эталон против себя даёт F1 = 1
     python eval/evaluate.py golden/golden.jsonl golden/golden.jsonl
 
-Форматы (см. корневой README):
+Форматы (подробнее — golden/README.md и predictions/README.md):
     эталон:       {"photo_id": 1, "boxes": [{"left": 0.1, "top": 0.2, "width": 0.3, "height": 0.4}]}
     предсказания: {"photo_id": 1, "boxes": [{..., "score": 0.8}], "error": null, "time_sec": 0.4}
 Строка с "error" или с "boxes": null — ошибка обработки: рамок у фото нет, его эталонные
