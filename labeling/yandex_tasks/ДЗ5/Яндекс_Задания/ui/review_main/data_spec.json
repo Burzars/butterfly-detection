@@ -1,0 +1,83 @@
+{
+  "input_spec": {
+    "image": {
+      "type": "url",
+      "hidden": false,
+      "required": true
+    },
+    "regions": {
+      "type": "json",
+      "hidden": false,
+      "required": true
+    },
+    "photo_id": {
+      "type": "string",
+      "hidden": true,
+      "required": true
+    },
+    "annotation_id": {
+      "type": "string",
+      "hidden": true,
+      "required": true
+    },
+    "training_hint": {
+      "type": "string",
+      "hidden": false,
+      "required": false
+    },
+    "source_worker_id": {
+      "type": "string",
+      "hidden": true,
+      "required": false
+    },
+    "interface_variant": {
+      "type": "string",
+      "hidden": true,
+      "required": true,
+      "allowed_values": [
+        "qualification"
+      ]
+    },
+    "source_assignment_id": {
+      "type": "string",
+      "hidden": true,
+      "required": false
+    },
+    "review_work_ui": {
+      "type": "string",
+      "required": true,
+      "hidden": true,
+      "allowed_values": [
+        "two_answers_v1"
+      ]
+    }
+  },
+  "output_spec": {
+    "status": {
+      "type": "string",
+      "hidden": false,
+      "required": true,
+      "allowed_values": [
+        "accept",
+        "reject",
+        "image_error",
+        "uncertain"
+      ]
+    },
+    "comment": {
+      "type": "string",
+      "hidden": false,
+      "required": false
+    },
+    "reasons": {
+      "type": "json",
+      "hidden": false,
+      "required": false
+    },
+    "shown_regions": {
+      "type": "json",
+      "hidden": false,
+      "required": false
+    }
+  }
+}

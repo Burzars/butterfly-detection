@@ -1,0 +1,13 @@
+# Credentials must never be committed
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+__pycache__/
+*.py[cod]
+*.lock
+# New runtime output (two requested historical reports are shipped explicitly)
+ДЗ5/Яндекс_Задания/state/*health*.json
+ДЗ5/Яндекс_Задания/state/objects.json

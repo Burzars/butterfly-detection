@@ -1,0 +1,90 @@
+{
+  "input_spec": {
+    "image": {
+      "type": "url",
+      "hidden": false,
+      "required": true
+    },
+    "regions": {
+      "type": "json",
+      "hidden": false,
+      "required": true
+    },
+    "photo_id": {
+      "type": "string",
+      "hidden": true,
+      "required": true
+    },
+    "annotation_id": {
+      "type": "string",
+      "hidden": true,
+      "required": true
+    },
+    "training_hint": {
+      "type": "string",
+      "hidden": false,
+      "required": false
+    },
+    "reference_status": {
+      "type": "string",
+      "hidden": false,
+      "required": true,
+      "allowed_values": [
+        "accept",
+        "reject"
+      ]
+    },
+    "source_worker_id": {
+      "type": "string",
+      "hidden": true,
+      "required": false
+    },
+    "interface_variant": {
+      "type": "string",
+      "hidden": true,
+      "required": true,
+      "allowed_values": [
+        "qualification"
+      ]
+    },
+    "review_learning_ui": {
+      "type": "string",
+      "hidden": true,
+      "required": true,
+      "allowed_values": [
+        "first_verdict_v1"
+      ]
+    },
+    "source_assignment_id": {
+      "type": "string",
+      "hidden": true,
+      "required": false
+    }
+  },
+  "output_spec": {
+    "status": {
+      "type": "string",
+      "hidden": false,
+      "required": true,
+      "allowed_values": [
+        "accept",
+        "reject"
+      ]
+    },
+    "understood": {
+      "type": "boolean",
+      "hidden": false,
+      "required": true
+    },
+    "draft_status": {
+      "type": "string",
+      "hidden": false,
+      "required": false
+    },
+    "feedback_seen": {
+      "type": "boolean",
+      "hidden": false,
+      "required": true
+    }
+  }
+}

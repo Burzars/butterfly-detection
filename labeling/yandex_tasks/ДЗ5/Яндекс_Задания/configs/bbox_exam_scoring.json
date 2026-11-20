@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "pool_id": "6870108",
+  "project_id": "11893",
+  "suite_id": "000068d45c--6afdd01afbab195e3dd56117",
+  "skill_id": "21627",
+  "opposite_skill_id": "21629",
+  "reference_file": "../Проверка_эталонов/annotations_reviewed.json",
+  "reference_sha256": "35b7ed2d8c5797e0bea6bed4248fb6f523a466ce4d32cfe7daaa74c1c9e44dfb",
+  "photo_ids": [
+    "364883207",
+    "380522900",
+    "763057603",
+    "763187205",
+    "763479533",
+    "763753993",
+    "764215661",
+    "764379390"
+  ],
+  "iou_threshold": 0.75,
+  "pass_count": 7,
+  "photo_count": 8,
+  "matching": "one_to_one_all_boxes_no_missing_or_extra",
+  "empty_rule": "status=empty and zero regions",
+  "payment": "all completed attempts paid; admission only for >=7/8",
+  "runner": "external_private_api_grader"
+}

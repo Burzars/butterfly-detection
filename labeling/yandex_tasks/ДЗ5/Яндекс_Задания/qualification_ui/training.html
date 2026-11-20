@@ -1,0 +1,25 @@
+<div class="lesson">
+  <h2>Учимся выделять бабочек</h2>
+  <p>Сначала разметьте фото самостоятельно. Каждую взрослую бабочку выделите отдельной рамкой вместе с видимыми усиками и лапками. Эталон появится после проверки.</p>
+  <p>Рисуйте рамки мышью или пальцем. Для перехода к экзамену нужны 7 правильных первых ответов из 8 при IoU ≥ 0,75.</p>
+  <p>Если фото не появилось, обновите страницу и проверьте соединение. Не отвечайте «Бабочек нет», пока не видите изображение. Если сбой сохраняется, выйдите из задания и сообщите заказчику.</p>
+  <div class="boards">
+    <div><h3>Ваша разметка</h3><div class="board student"><img alt="Фотография для разметки"><svg aria-label="Область рисования рамок"></svg></div></div>
+    <div class="reference" hidden><h3>Эталон</h3><div class="board gold"><img alt="Эталонная разметка"><svg aria-label="Эталонные рамки"></svg></div></div>
+  </div>
+  <div class="draft-controls">
+    <p><button type="button" data-action="undo">Удалить последнюю рамку</button> <button type="button" data-action="clear">Удалить все рамки</button> <span class="count"></span></p>
+    <fieldset><legend>Результат по фотографии</legend>
+      <label><input type="radio" name="lesson-status" value="objects"> Бабочки есть — все выделены</label>
+      <label><input type="radio" name="lesson-status" value="empty"> Взрослых бабочек нет</label>
+    </fieldset>
+    <button type="button" class="check" data-action="check">Проверить разметку</button>
+  </div>
+  <p class="lesson-error" role="alert"></p>
+  <section class="feedback" aria-live="polite" hidden>
+    <h3 class="verdict"></h3><p class="explanation"></p><p class="hint"></p>
+    <p>Ваш первый ответ сохранён. Просмотр эталона и исправления не повышают его балл.</p>
+    <button type="button" data-action="ack">Я разобрал(а) эталон</button>
+    <p class="ready" hidden>Теперь нажмите «Отправить» внизу страницы. После всех восьми примеров проверка допуска может занять около минуты.</p>
+  </section>
+</div>

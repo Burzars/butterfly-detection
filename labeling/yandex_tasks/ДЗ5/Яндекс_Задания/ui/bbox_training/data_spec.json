@@ -1,0 +1,83 @@
+{
+  "input_spec": {
+    "image": {
+      "type": "url",
+      "hidden": false,
+      "required": true
+    },
+    "photo_id": {
+      "type": "string",
+      "hidden": true,
+      "required": true
+    },
+    "training_hint": {
+      "type": "string",
+      "hidden": false,
+      "required": false
+    },
+    "show_reference": {
+      "type": "boolean",
+      "hidden": false,
+      "required": false
+    },
+    "interface_variant": {
+      "type": "string",
+      "hidden": true,
+      "required": true,
+      "allowed_values": [
+        "qualification"
+      ]
+    },
+    "reference_regions": {
+      "type": "json",
+      "hidden": false,
+      "required": false
+    },
+    "learning_ui_version": {
+      "type": "string",
+      "hidden": true,
+      "required": true,
+      "allowed_values": [
+        "v5"
+      ]
+    }
+  },
+  "output_spec": {
+    "status": {
+      "type": "string",
+      "hidden": false,
+      "required": false,
+      "allowed_values": [
+        "objects",
+        "empty",
+        "image_error",
+        "uncertain"
+      ]
+    },
+    "comment": {
+      "type": "string",
+      "hidden": false,
+      "required": false
+    },
+    "regions": {
+      "type": "json",
+      "hidden": false,
+      "required": false
+    },
+    "first_answer": {
+      "type": "json",
+      "hidden": false,
+      "required": false
+    },
+    "reference_view": {
+      "type": "json",
+      "hidden": false,
+      "required": false
+    },
+    "training_complete": {
+      "type": "boolean",
+      "hidden": false,
+      "required": true
+    }
+  }
+}

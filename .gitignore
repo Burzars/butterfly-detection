@@ -6,6 +6,8 @@ venv/
 .DS_Store
 local/
 viz/
+data/images/
+data/exam/images/
 
 *.pt
 *.safetensors

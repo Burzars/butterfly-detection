@@ -1,0 +1,44 @@
+{
+  "bbox_main": {
+    "source": "state/bbox_two_answers/bbox_main_project.json",
+    "pool_id": "6870107",
+    "view_type": "tb",
+    "source_sha256": "b3f21b2ec8a076699f4bcc8b4a5ba81e0ff09733cbaa3109099dc8f4eb39c238",
+    "learning_files_override": false
+  },
+  "bbox_exam": {
+    "source": "state/bbox_two_answers/bbox_exam_project.json",
+    "pool_id": "6870108",
+    "view_type": "tb",
+    "source_sha256": "d918dcaeea0efa9052257c73eb96ac2cc626ee82e87f430511f499044b8b7878",
+    "learning_files_override": false
+  },
+  "bbox_training": {
+    "source": "state/bbox_two_answers/bbox_training_project.json",
+    "pool_id": "6870109",
+    "view_type": "classic",
+    "source_sha256": "2935d1695e85d910d88d59bc25359abb28565ea8680617009c3f85c39ce1fc88",
+    "learning_files_override": true
+  },
+  "review_main": {
+    "source": "state/review_verdict_only/review_main_project.json",
+    "pool_id": "6870574",
+    "view_type": "tb",
+    "source_sha256": "c3779f00fa660aa9040b32b2864f58265c08d1bc66ed91532d8610ce75eadeac",
+    "learning_files_override": false
+  },
+  "review_exam": {
+    "source": "state/review_verdict_only/review_exam_project.json",
+    "pool_id": "6870571",
+    "view_type": "tb",
+    "source_sha256": "f914cc093af776bcc1d033a83601bfc20a31dbbf619f0d12e20081989830f123",
+    "learning_files_override": false
+  },
+  "review_training": {
+    "source": "state/review_project.json",
+    "pool_id": "6870548",
+    "view_type": "classic",
+    "source_sha256": "778b7b60eab84cd93293780b8cb2e5cc3805267a17974f6e84a5e20a2d974824",
+    "learning_files_override": true
+  }
+}

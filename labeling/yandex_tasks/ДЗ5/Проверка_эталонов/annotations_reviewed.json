@@ -1,0 +1,5276 @@
+{
+  "schema_version": 1,
+  "dataset_fingerprint": "e26a8344b543b13fb9ee6aae2e0d4a83fdf60ec2ba924930db3428aea1ae866f",
+  "exported_at": "2026-11-18T09:04:09.748973+00:00",
+  "completed": 66,
+  "total": 66,
+  "coordinate_format": "template_builder_rectangle_shape_left_top_width_height_normalized_0_1",
+  "annotations": {
+    "764083569": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.1989451144,
+              "y": 0.2000799724
+            },
+            "p2": {
+              "x": 0.72,
+              "y": 0.846766606
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "На фото одна взрослая дневная бабочка. Нужна одна рамка вокруг всех её видимых частей, включая различимые усики и лапки. Рамка должна быть близка к силуэту, без большого запаса фона.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763490149": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.313,
+              "y": 0.0839788622
+            },
+            "p2": {
+              "x": 0.5982778645,
+              "y": 0.9145314558
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "На фото один взрослый мотылёк. Мотыльки и моль входят в целевой класс так же, как дневные бабочки. Выделите его одной рамкой, включая длинные видимые усики.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763916061": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.22147938421298982,
+              "y": 0.12950824813397727
+            },
+            "p2": {
+              "x": 0.7400378727699676,
+              "y": 0.8686414100232077
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "На фото одна бабочка со сложенными крыльями. Обведите фактический видимый силуэт, включая усики и лапки. Не увеличивайте рамку до воображаемых расправленных крыльев.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "761031680": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.7507899388,
+              "y": 0
+            },
+            "p2": {
+              "x": 0.907,
+              "y": 0.1864768237
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.518,
+              "y": 0.404
+            },
+            "p2": {
+              "x": 0.747,
+              "y": 0.682
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.138,
+              "y": 0.3508201091
+            },
+            "p2": {
+              "x": 0.3703859214,
+              "y": 0.5668161576
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.277,
+              "y": 0.5974095214
+            },
+            "p2": {
+              "x": 0.536,
+              "y": 0.7580286019
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3396671106,
+              "y": 0.3723342533
+            },
+            "p2": {
+              "x": 0.581,
+              "y": 0.681
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3680808345,
+              "y": 0.247
+            },
+            "p2": {
+              "x": 0.581,
+              "y": 0.586
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "На фото шесть взрослых бабочек: пять у плодов и одна вверху у края кадра. Нужны шесть отдельных рамок. Перекрытие рамок допустимо; для каждой особи учитываются только её собственные видимые части. Части за границей фотографии не достраиваются.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763530743": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.272,
+              "y": 0.235
+            },
+            "p2": {
+              "x": 0.6272867925,
+              "y": 0.4364062598
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "На фото одна бабочка, частично закрытая веткой. Выделите все её различимые видимые части одной рамкой. Ветку и фон между этими частями включать в прямоугольник допустимо, а скрытое продолжение бабочки достраивать не нужно.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "762642743": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.036884495180598165,
+              "y": 0
+            },
+            "p2": {
+              "x": 1,
+              "y": 0.9953349432352757
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "На фото один взрослый мотылёк крупным планом. Часть его тела или крыльев выходит за границу фотографии. Рамка должна охватить видимые части и закончиться на краю кадра. Скрытое продолжение не дорисовывайте.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "764240440": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "Взрослых бабочек на фото нет: показано другое насекомое. Правильный ответ — «Взрослых бабочек нет», без рамок. Не выделяйте любое крылатое насекомое только потому, что у него есть крылья.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "764381301": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "На фотографии растения и плоды; взрослых бабочек нет. Правильный ответ — «Взрослых бабочек нет», список рамок пустой. Не выделяйте листья, цветы, плоды и тени.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763479533": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.18122775227304372,
+              "y": 0.15507589537728153
+            },
+            "p2": {
+              "x": 0.8115356937971452,
+              "y": 0.812801856614188
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:28:29.381Z"
+    },
+    "763057603": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.14218668867995432,
+              "y": 0.21817568838988896
+            },
+            "p2": {
+              "x": 0.9383267707300704,
+              "y": 0.7253340023834913
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:28:34.409Z"
+    },
+    "763753993": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.14084360604309945,
+              "y": 0.1494543059650004
+            },
+            "p2": {
+              "x": 0.7762579124982106,
+              "y": 0.8482249262999437
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:28:45.281Z"
+    },
+    "380522900": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.17961905956637172,
+              "y": 0.29818729222856416
+            },
+            "p2": {
+              "x": 0.7095799619477722,
+              "y": 0.5701718622592986
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.26106546237638223,
+              "y": 0.5325299504484726
+            },
+            "p2": {
+              "x": 0.6619624077442555,
+              "y": 0.7922364046917141
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:28:53.244Z"
+    },
+    "763187205": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.06938259215120517,
+              "y": 0.3152167095276924
+            },
+            "p2": {
+              "x": 0.895847707457818,
+              "y": 0.7116759706454241
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:28:57.996Z"
+    },
+    "364883207": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.18755001352569128,
+              "y": 0
+            },
+            "p2": {
+              "x": 1,
+              "y": 0.8855767421438875
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:29:01.958Z"
+    },
+    "764215661": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:29:04.358Z"
+    },
+    "764379390": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": false,
+      "review_verdict": null,
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:29:06.552Z"
+    },
+    "763974284": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2248190847221106,
+              "y": 0.1554130339333876
+            },
+            "p2": {
+              "x": 0.6579388806356777,
+              "y": 0.5615944301574358
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.33495592965405563,
+              "y": 0.18381891739321327
+            },
+            "p2": {
+              "x": 0.6678444328372709,
+              "y": 0.51335225490811
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "Правильный вердикт — «Требует исправления». Рамка заметно отрезает переднюю часть бабочки и видимые усики; это существенная ошибка границ. Небольшая неточность в несколько пикселей сама по себе не повод отклонять ответ, если все различимые части охвачены и нет большого запаса фона.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763489544": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.23,
+              "y": 0.08
+            },
+            "p2": {
+              "x": 0.725,
+              "y": 0.887
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.23,
+              "y": 0.08
+            },
+            "p2": {
+              "x": 0.725,
+              "y": 0.887
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "Правильный вердикт — «Разметка верна». Взрослый мотылёк выделен одной рамкой вместе с видимыми усиками. Небольшой технический зазор и незначительная неточность границы допустимы: от ревьюера не требуется точное совпадение с координатами составителя.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "764372011": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.27244145022390104,
+              "y": 0.2429436116163834
+            },
+            "p2": {
+              "x": 0.7681367877972732,
+              "y": 0.8388242488866589
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "Правильный вердикт — «Требует исправления». На фото жук, а не взрослая бабочка. Рамка вокруг него лишняя. Для этой фотографии правильная разметка должна быть пустой.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763915339": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2993104493596327,
+              "y": 0.1773427209433607
+            },
+            "p2": {
+              "x": 0.691428071513556,
+              "y": 0.8142131342909114
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2802111581346437,
+              "y": 0.16187354952016558
+            },
+            "p2": {
+              "x": 0.7072814240820814,
+              "y": 0.8202345857115975
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.12970427423575384,
+              "y": 0
+            },
+            "p2": {
+              "x": 0.3075899450630763,
+              "y": 0.21183277927617128
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "Правильный вердикт — «Требует исправления». Помимо рамки вокруг бабочки добавлена лишняя рамка в левом верхнем углу, где находится деталь фона. Проверяйте каждую рамку и всю фотографию: наличие одной правильно выделенной бабочки не делает весь ответ верным.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "764367118": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "Правильный вердикт — «Разметка верна». На фото другое насекомое, взрослых бабочек нет. Пустой список рамок здесь является полноценным правильным ответом.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763905764": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.27667448133451433,
+              "y": 0.18648466411591294
+            },
+            "p2": {
+              "x": 0.7349659195154206,
+              "y": 0.877893119237283
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "missing"
+      ],
+      "hint": "Правильный вердикт — «Требует исправления». На фото есть взрослая бабочка, но в предъявленном ответе нет ни одной рамки. Объект пропущен. Пустой ответ допустим только на фотографиях без взрослых бабочек.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "294852448": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.21374584457128523,
+              "y": 0.33543718246252274
+            },
+            "p2": {
+              "x": 0.5039202157686761,
+              "y": 0.6510459135670827
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4952330176252902,
+              "y": 0.41130119801793896
+            },
+            "p2": {
+              "x": 0.8821661544251397,
+              "y": 0.7701969516402182
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2155177820987268,
+              "y": 0.33372796838738
+            },
+            "p2": {
+              "x": 0.4960013799159508,
+              "y": 0.6656918396788559
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "missing"
+      ],
+      "hint": "Правильный вердикт — «Требует исправления». На фотографии две взрослые бабочки, а выделена только левая. Правая бабочка пропущена. Осматривайте весь кадр, включая области за пределами уже нарисованных рамок.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763890362": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.20596776805486527,
+              "y": 0.018942482594242003
+            },
+            "p2": {
+              "x": 0.8972674272489595,
+              "y": 0.9158172865834538
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.20596776805486527,
+              "y": 0.018942482594242003
+            },
+            "p2": {
+              "x": 0.8972674272489595,
+              "y": 0.9158172865834538
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "Правильный вердикт — «Разметка верна». Бабочка, её видимые усики и лапки охвачены рамкой. Небольшой запас фона вокруг силуэта допустим. Отклонять нужно за существенную обрезку видимых частей или очевидно чрезмерный запас, а не за небольшое отличие координат.",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763859604": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.05679621363645138,
+              "y": 0.15866681302138871
+            },
+            "p2": {
+              "x": 0.8279267778897018,
+              "y": 0.8502399172050431
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.025783170236824936,
+              "y": 0
+            },
+            "p2": {
+              "x": 1,
+              "y": 0.963604716803613
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:38:13.658Z"
+    },
+    "763323136": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.49169959647912326,
+              "y": 0.11276108637019372
+            },
+            "p2": {
+              "x": 0.7925108197955213,
+              "y": 0.7985087499215955
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.11875640301908863,
+              "y": 0
+            },
+            "p2": {
+              "x": 1,
+              "y": 0.9296164460891925
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:34:32.304Z"
+    },
+    "763734745": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.308,
+              "y": 0.38
+            },
+            "p2": {
+              "x": 0.725,
+              "y": 0.667
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.308,
+              "y": 0.38
+            },
+            "p2": {
+              "x": 0.725,
+              "y": 0.667
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:35:04.212Z"
+    },
+    "763546543": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3140101706669631,
+              "y": 0.25540989776077266
+            },
+            "p2": {
+              "x": 0.7879222952327196,
+              "y": 0.6657388822680799
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.37806138499830483,
+              "y": 0.47433826757824743
+            },
+            "p2": {
+              "x": 0.7351226153712612,
+              "y": 0.6868531643981683
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:38:38.057Z"
+    },
+    "764329095": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:35:30.594Z"
+    },
+    "764328073": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3397846201585795,
+              "y": 0.16258702879006462
+            },
+            "p2": {
+              "x": 0.667348206211481,
+              "y": 0.9349793012607414
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:38:30.475Z"
+    },
+    "763513481": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2597400509996336,
+              "y": 0.10688076271718
+            },
+            "p2": {
+              "x": 0.7211465374376472,
+              "y": 0.757887474126576
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2597400509996336,
+              "y": 0.10688076271718
+            },
+            "p2": {
+              "x": 0.7211465374376472,
+              "y": 0.757887474126576
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:36:49.433Z"
+    },
+    "764268878": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.34678833776111617,
+              "y": 0.16267327353697553
+            },
+            "p2": {
+              "x": 0.7284457484818773,
+              "y": 0.7360126701373644
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:38:05.016Z"
+    },
+    "763530254": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.14,
+              "y": 0.288
+            },
+            "p2": {
+              "x": 0.67,
+              "y": 0.593
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.14,
+              "y": 0.288
+            },
+            "p2": {
+              "x": 0.67,
+              "y": 0.593
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "285196861": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.20548202973091625,
+              "y": 0.303597189989337
+            },
+            "p2": {
+              "x": 0.601823684375588,
+              "y": 0.5707050116038387
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.6007652261180454,
+              "y": 0.37391802044784545
+            },
+            "p2": {
+              "x": 0.8119864517343032,
+              "y": 0.6668679044094586
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.20558395534090199,
+              "y": 0.303330615317067
+            },
+            "p2": {
+              "x": 0.6066220284764472,
+              "y": 0.5787884965188484
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "missing"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:37:53.087Z"
+    },
+    "763478388": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.047,
+              "y": 0.205
+            },
+            "p2": {
+              "x": 0.915,
+              "y": 0.9
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.047,
+              "y": 0.205
+            },
+            "p2": {
+              "x": 0.915,
+              "y": 0.9
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:38:58.739Z"
+    },
+    "763404371": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.23778334655835737,
+              "y": 0.2650693094147902
+            },
+            "p2": {
+              "x": 0.7729894893414928,
+              "y": 0.577424261431349
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.23778334655835737,
+              "y": 0.2650693094147902
+            },
+            "p2": {
+              "x": 0.7729894893414928,
+              "y": 0.577424261431349
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:39:15.303Z"
+    },
+    "763266342": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4483384203747825,
+              "y": 0.3761682242990655
+            },
+            "p2": {
+              "x": 0.5891618812980717,
+              "y": 0.6912516464906229
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4483384203747825,
+              "y": 0.3761682242990655
+            },
+            "p2": {
+              "x": 0.5891618812980717,
+              "y": 0.6912516464906229
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:39:33.370Z"
+    },
+    "763364717": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.41881626695983354,
+              "y": 0.34568462648184156
+            },
+            "p2": {
+              "x": 0.5413504512413364,
+              "y": 0.682274352380355
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.41881626695983354,
+              "y": 0.34568462648184156
+            },
+            "p2": {
+              "x": 0.5413504512413364,
+              "y": 0.682274352380355
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:39:40.453Z"
+    },
+    "763364713": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3290531263965769,
+              "y": 0.282114407576993
+            },
+            "p2": {
+              "x": 0.6805906350210517,
+              "y": 0.7020165589914069
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.41026039604469833,
+              "y": 0.34836605406761584
+            },
+            "p2": {
+              "x": 0.6805141908135625,
+              "y": 0.6998996424763219
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:40:09.108Z"
+    },
+    "763847661": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.07900159782564685,
+              "y": 0.1634494762591733
+            },
+            "p2": {
+              "x": 0.9304256674136443,
+              "y": 0.786708900457881
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.07900159782564685,
+              "y": 0.1634494762591733
+            },
+            "p2": {
+              "x": 0.9304256674136443,
+              "y": 0.786708900457881
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:40:23.053Z"
+    },
+    "763058682": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.302,
+              "y": 0.265
+            },
+            "p2": {
+              "x": 0.59,
+              "y": 0.86
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.302,
+              "y": 0.265
+            },
+            "p2": {
+              "x": 0.59,
+              "y": 0.86
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "763058658": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4445253822141465,
+              "y": 0.4554349871416923
+            },
+            "p2": {
+              "x": 0.5452456789842808,
+              "y": 0.5683685630057079
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.1980901140419863,
+              "y": 0.25654676033368873
+            },
+            "p2": {
+              "x": 0.8527981905807691,
+              "y": 0.8019506993664932
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:42:05.124Z"
+    },
+    "763057655": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4685915715047051,
+              "y": 0.25326161951953835
+            },
+            "p2": {
+              "x": 0.6617486266190185,
+              "y": 0.8220927679859501
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4685915715047051,
+              "y": 0.25326161951953835
+            },
+            "p2": {
+              "x": 0.6617486266190185,
+              "y": 0.8220927679859501
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:42:11.727Z"
+    },
+    "762681770": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.28030065441468555,
+              "y": 0.2868970708147776
+            },
+            "p2": {
+              "x": 0.7124652407535175,
+              "y": 0.6502226682556607
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.28030065441468555,
+              "y": 0.2868970708147776
+            },
+            "p2": {
+              "x": 0.7124652407535175,
+              "y": 0.6502226682556607
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:42:19.533Z"
+    },
+    "762680274": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.392,
+              "y": 0.287
+            },
+            "p2": {
+              "x": 0.763,
+              "y": 0.55
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.392,
+              "y": 0.287
+            },
+            "p2": {
+              "x": 0.763,
+              "y": 0.55
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:42:27.437Z"
+    },
+    "762672181": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.1287189780258838,
+              "y": 0.42334410085931123
+            },
+            "p2": {
+              "x": 0.7556816993874008,
+              "y": 0.5907765163394592
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.1288653327479142,
+              "y": 0.4169933513140563
+            },
+            "p2": {
+              "x": 0.7656338204854792,
+              "y": 0.5937950824813396
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4741056681093057,
+              "y": 0.696873235902904
+            },
+            "p2": {
+              "x": 0.693648205063873,
+              "y": 0.8118374835350937
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.1396328587258774,
+              "y": 0.8327949570344351
+            },
+            "p2": {
+              "x": 0.28730477325471987,
+              "y": 0.9335053001317191
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.7468795082481338,
+              "y": 0.07893746471805801
+            },
+            "p2": {
+              "x": 0.8634510443454806,
+              "y": 0.14844289029668184
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:42:50.626Z"
+    },
+    "764268727": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3582532483731522,
+              "y": 0.25352035376027093
+            },
+            "p2": {
+              "x": 0.6354605633956859,
+              "y": 0.7748384871103304
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:43:01.282Z"
+    },
+    "764183077": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3889554686719586,
+              "y": 0.17044314119049103
+            },
+            "p2": {
+              "x": 0.5865542290706937,
+              "y": 0.8392554726212129
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:43:16.120Z"
+    },
+    "764099073": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:43:25.414Z"
+    },
+    "764096028": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:43:30.331Z"
+    },
+    "764018931": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2597699506006299,
+              "y": 0.16600545694035002
+            },
+            "p2": {
+              "x": 0.7910424535579427,
+              "y": 0.7719296870099731
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:43:38.793Z"
+    },
+    "762668953": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.09517238495473428,
+              "y": 0.38053534466537026
+            },
+            "p2": {
+              "x": 0.548809299797194,
+              "y": 0.821473373894499
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.09517238495473428,
+              "y": 0.38053534466537026
+            },
+            "p2": {
+              "x": 0.548809299797194,
+              "y": 0.821473373894499
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:43:45.319Z"
+    },
+    "762666442": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4054862112944028,
+              "y": 0.47687856739634943
+            },
+            "p2": {
+              "x": 0.5221727403876306,
+              "y": 0.5424245750486105
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.21974116122017998,
+              "y": 0.44194160446590974
+            },
+            "p2": {
+              "x": 1,
+              "y": 1
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:44:00.202Z"
+    },
+    "762666185": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.1493236321060444,
+              "y": 0.31040268456375836
+            },
+            "p2": {
+              "x": 0.788224717221769,
+              "y": 0.811798281377407
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.1493236321060444,
+              "y": 0.31040268456375836
+            },
+            "p2": {
+              "x": 0.788224717221769,
+              "y": 0.811798281377407
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:44:07.181Z"
+    },
+    "764006237": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:44:11.281Z"
+    },
+    "764244023": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.26373687553321684,
+              "y": 0.34914225678981375
+            },
+            "p2": {
+              "x": 0.6528694668007823,
+              "y": 0.6865709088628239
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:44:18.997Z"
+    },
+    "764197034": {
+      "gold_status": "empty",
+      "gold_regions": [],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:44:22.690Z"
+    },
+    "762665997": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.31118150076313505,
+              "y": 0.2935300758953772
+            },
+            "p2": {
+              "x": 0.644682096635932,
+              "y": 0.6639120617198768
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.31118150076313505,
+              "y": 0.2935300758953772
+            },
+            "p2": {
+              "x": 0.644682096635932,
+              "y": 0.6639120617198768
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:44:29.945Z"
+    },
+    "762665197": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.6353363022434086,
+              "y": 0.3447045725396725
+            },
+            "p2": {
+              "x": 0.8443308453030586,
+              "y": 0.5269554036254154
+            }
+          }
+        }
+      ],
+      "review_regions": [],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "missing"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T09:04:09.746080+00:00"
+    },
+    "762664070": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2812310522904511,
+              "y": 0.3157263375776202
+            },
+            "p2": {
+              "x": 0.824552050011499,
+              "y": 0.7618625729160131
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.2812310522904511,
+              "y": 0.3157263375776202
+            },
+            "p2": {
+              "x": 0.824552050011499,
+              "y": 0.7618625729160131
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:46:47.625Z"
+    },
+    "581823917": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.3765014579527457,
+              "y": 0.1269130652951138
+            },
+            "p2": {
+              "x": 0.5624549328320031,
+              "y": 0.47001818980116666
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.43571043681494237,
+              "y": 0.4088628238098225
+            },
+            "p2": {
+              "x": 0.7241226710243133,
+              "y": 0.7198535407388823
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.38415763934896974,
+              "y": 0.16719720253402745
+            },
+            "p2": {
+              "x": 0.7278272749257119,
+              "y": 0.6967713102929185
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "merged"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:52:50.723Z"
+    },
+    "390616794": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.021382661643855046,
+              "y": 0.29371824625227366
+            },
+            "p2": {
+              "x": 0.25718709558837355,
+              "y": 0.43998149658157176
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.17446816698096734,
+              "y": 0.15869033431600071
+            },
+            "p2": {
+              "x": 0.46995144817980755,
+              "y": 0.3012607413912061
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.26874555062804645,
+              "y": 0.2678134604528633
+            },
+            "p2": {
+              "x": 0.4645136816655746,
+              "y": 0.47865050492379096
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4411406758320267,
+              "y": 0.5531502853917079
+            },
+            "p2": {
+              "x": 0.5637166403184815,
+              "y": 0.8172160195697169
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.7855040999829834,
+              "y": 0.4457755754876747
+            },
+            "p2": {
+              "x": 0.9599223816451635,
+              "y": 0.6583453553283571
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.6051956159741458,
+              "y": 0.45322398544815895
+            },
+            "p2": {
+              "x": 0.7330812990977325,
+              "y": 0.6978062472558488
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.6856865115199904,
+              "y": 0.5382299441761274
+            },
+            "p2": {
+              "x": 0.9328530604259598,
+              "y": 0.889622404817161
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.021382661643855046,
+              "y": 0.29371824625227366
+            },
+            "p2": {
+              "x": 0.25718709558837355,
+              "y": 0.43998149658157176
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.17446816698096734,
+              "y": 0.15869033431600071
+            },
+            "p2": {
+              "x": 0.46995144817980755,
+              "y": 0.3012607413912061
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.26874555062804645,
+              "y": 0.2678134604528633
+            },
+            "p2": {
+              "x": 0.4645136816655746,
+              "y": 0.47865050492379096
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4411406758320267,
+              "y": 0.5531502853917079
+            },
+            "p2": {
+              "x": 0.5637166403184815,
+              "y": 0.8172160195697169
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.7855040999829834,
+              "y": 0.4457755754876747
+            },
+            "p2": {
+              "x": 0.9599223816451635,
+              "y": 0.6583453553283571
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.6051956159741458,
+              "y": 0.45322398544815895
+            },
+            "p2": {
+              "x": 0.7330812990977325,
+              "y": 0.6978062472558488
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.6856865115199904,
+              "y": 0.5382299441761274
+            },
+            "p2": {
+              "x": 0.9328530604259598,
+              "y": 0.889622404817161
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.5932103346774691,
+              "y": 0.4323449162641911
+            },
+            "p2": {
+              "x": 0.984806352428506,
+              "y": 0.9074123439754123
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "extra"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:53:34.542Z"
+    },
+    "667490055": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.112,
+              "y": 0.214
+            },
+            "p2": {
+              "x": 0.792,
+              "y": 0.901
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.29,
+              "y": 0
+            },
+            "p2": {
+              "x": 0.792,
+              "y": 0.598
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.112,
+              "y": 0.214
+            },
+            "p2": {
+              "x": 0.792,
+              "y": 0.901
+            }
+          }
+        },
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.29,
+              "y": 0
+            },
+            "p2": {
+              "x": 0.792,
+              "y": 0.598
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:53:44.996Z"
+    },
+    "762662248": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4894520061050824,
+              "y": 0.49945901022392264
+            },
+            "p2": {
+              "x": 0.597148173702147,
+              "y": 0.6566675029793638
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.4894520061050824,
+              "y": 0.49945901022392264
+            },
+            "p2": {
+              "x": 0.597148173702147,
+              "y": 0.6566675029793638
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:54:01.277Z"
+    },
+    "762657203": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.11525043869664586,
+              "y": 0.27742582951765665
+            },
+            "p2": {
+              "x": 0.866555870547615,
+              "y": 0.7914131593802923
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.11525043869664586,
+              "y": 0.27742582951765665
+            },
+            "p2": {
+              "x": 0.866555870547615,
+              "y": 0.7914131593802923
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "accept",
+      "review_reasons": [],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:54:07.387Z"
+    },
+    "762657130": {
+      "gold_status": "objects",
+      "gold_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.13319718648564416,
+              "y": 0.26457536222793704
+            },
+            "p2": {
+              "x": 0.9236361722474206,
+              "y": 0.5996126826820548
+            }
+          }
+        }
+      ],
+      "review_regions": [
+        {
+          "type": "rectangle",
+          "data": {
+            "p1": {
+              "x": 0.09905014703259263,
+              "y": 0.09389700809132535
+            },
+            "p2": {
+              "x": 1,
+              "y": 0.7926754688578059
+            }
+          }
+        }
+      ],
+      "review_initialized": true,
+      "review_verdict": "reject",
+      "review_reasons": [
+        "bounds"
+      ],
+      "hint": "",
+      "note": "",
+      "complete": true,
+      "updated_at": "2026-11-18T08:54:18.378Z"
+    }
+  },
+  "items": [
+    {
+      "photo_id": "764083569",
+      "section": "01_bbox_training",
+      "slot": 1,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764083569/original.jpg",
+      "local_file": "additional_66/01_bbox_training/764083569.jpg",
+      "sha256": "584a5384473ac6ee96188eec04b7d517083e603248c4a24eac321e8c804ad05d",
+      "width": 1003,
+      "height": 820,
+      "scenario": "Обычная бабочка",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.1989451144,
+            "top": 0.2000799724,
+            "width": 0.5210548855999999,
+            "height": 0.6466866336
+          }
+        ]
+      },
+      "training_hint": "На фото одна взрослая дневная бабочка. Нужна одна рамка вокруг всех её видимых частей, включая различимые усики и лапки. Рамка должна быть близка к силуэту, без большого запаса фона.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415001531",
+        "license_code": "cc0",
+        "observer_login": "textileranger"
+      }
+    },
+    {
+      "photo_id": "763490149",
+      "section": "01_bbox_training",
+      "slot": 2,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763490149/original.jpg",
+      "local_file": "additional_66/01_bbox_training/763490149.jpg",
+      "sha256": "4f3025989610fd9d5888774876aa29aa08bc1d083dfd45c09fa487d757232a6e",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Мотылёк или моль",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.313,
+            "top": 0.0839788622,
+            "width": 0.2852778645,
+            "height": 0.8305525936
+          }
+        ]
+      },
+      "training_hint": "На фото один взрослый мотылёк. Мотыльки и моль входят в целевой класс так же, как дневные бабочки. Выделите его одной рамкой, включая длинные видимые усики.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414709345",
+        "license_code": "cc0",
+        "observer_login": "simon_oliver"
+      }
+    },
+    {
+      "photo_id": "763916061",
+      "section": "01_bbox_training",
+      "slot": 3,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763916061/original.jpg",
+      "local_file": "additional_66/01_bbox_training/763916061.jpg",
+      "sha256": "00f9c93d57e9594d25ffe2635863809bf6b7e495d2afdd2fd5ef61ae152f8023",
+      "width": 1299,
+      "height": 974,
+      "scenario": "Сложенные крылья",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.22147938421298982,
+            "top": 0.12950824813397727,
+            "width": 0.5185584885569777,
+            "height": 0.7391331618892305
+          }
+        ]
+      },
+      "training_hint": "На фото одна бабочка со сложенными крыльями. Обведите фактический видимый силуэт, включая усики и лапки. Не увеличивайте рамку до воображаемых расправленных крыльев.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414918213",
+        "license_code": "cc0",
+        "observer_login": "oerknal"
+      }
+    },
+    {
+      "photo_id": "761031680",
+      "section": "01_bbox_training",
+      "slot": 4,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/761031680/original.jpg",
+      "local_file": "additional_66/01_bbox_training/761031680.jpg",
+      "sha256": "de2449097212fa8fd580d082b43d47db8ee127f1ab831b1fe4a08d26dd139916",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Несколько бабочек",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.7507899388,
+            "top": 0,
+            "width": 0.15621006120000003,
+            "height": 0.1864768237
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.518,
+            "top": 0.404,
+            "width": 0.22899999999999998,
+            "height": 0.278
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.138,
+            "top": 0.3508201091,
+            "width": 0.23238592139999997,
+            "height": 0.21599604850000004
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.277,
+            "top": 0.5974095214,
+            "width": 0.259,
+            "height": 0.16061908049999996
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.3396671106,
+            "top": 0.3723342533,
+            "width": 0.24133288939999997,
+            "height": 0.3086657467000001
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.3680808345,
+            "top": 0.247,
+            "width": 0.21291916549999995,
+            "height": 0.33899999999999997
+          }
+        ]
+      },
+      "training_hint": "На фото шесть взрослых бабочек: пять у плодов и одна вверху у края кадра. Нужны шесть отдельных рамок. Перекрытие рамок допустимо; для каждой особи учитываются только её собственные видимые части. Части за границей фотографии не достраиваются.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/413488661",
+        "license_code": "cc0",
+        "observer_login": "sturuss"
+      }
+    },
+    {
+      "photo_id": "763530743",
+      "section": "01_bbox_training",
+      "slot": 5,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763530743/original.jpg",
+      "local_file": "additional_66/01_bbox_training/763530743.jpg",
+      "sha256": "d44867fc86504f433eb7f78b65a77a750062eeb04d0b5353e7dc04ce5f00542b",
+      "width": 1152,
+      "height": 2048,
+      "scenario": "Перекрытие",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.272,
+            "top": 0.235,
+            "width": 0.35528679249999995,
+            "height": 0.2014062598
+          }
+        ]
+      },
+      "training_hint": "На фото одна бабочка, частично закрытая веткой. Выделите все её различимые видимые части одной рамкой. Ветку и фон между этими частями включать в прямоугольник допустимо, а скрытое продолжение бабочки достраивать не нужно.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414704497",
+        "license_code": "cc0",
+        "observer_login": "meleblanc"
+      }
+    },
+    {
+      "photo_id": "762642743",
+      "section": "01_bbox_training",
+      "slot": 6,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762642743/original.jpg",
+      "local_file": "additional_66/01_bbox_training/762642743.jpg",
+      "sha256": "be90a5a529290bb79f7b440bed2ef1f4419caf63b3f582b8b90a7aa70090bc20",
+      "width": 2048,
+      "height": 1153,
+      "scenario": "Обрезка краем",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.036884495180598165,
+            "top": 0,
+            "width": 0.9631155048194018,
+            "height": 0.9953349432352757
+          }
+        ]
+      },
+      "training_hint": "На фото один взрослый мотылёк крупным планом. Часть его тела или крыльев выходит за границу фотографии. Рамка должна охватить видимые части и закончиться на краю кадра. Скрытое продолжение не дорисовывайте.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414287539",
+        "license_code": "cc0",
+        "observer_login": "dale_holder"
+      }
+    },
+    {
+      "photo_id": "764240440",
+      "section": "01_bbox_training",
+      "slot": 7,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764240440/original.jpg",
+      "local_file": "additional_66/01_bbox_training/764240440.jpg",
+      "sha256": "67c5a8a1845dc3e485a6ad6539acb32dab8873437ecb891fc220f3212008b194",
+      "width": 1688,
+      "height": 2048,
+      "scenario": "Похожее насекомое",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "Взрослых бабочек на фото нет: показано другое насекомое. Правильный ответ — «Взрослых бабочек нет», без рамок. Не выделяйте любое крылатое насекомое только потому, что у него есть крылья.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415075449",
+        "license_code": "cc0",
+        "observer_login": "silverbird"
+      }
+    },
+    {
+      "photo_id": "764381301",
+      "section": "01_bbox_training",
+      "slot": 8,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764381301/original.jpg",
+      "local_file": "additional_66/01_bbox_training/764381301.jpg",
+      "sha256": "25eb88fc8d176e2a9bc7c896bff16f9a34803323e467f0e3cc8b30bcd351c1eb",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Растение без бабочек",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "На фотографии растения и плоды; взрослых бабочек нет. Правильный ответ — «Взрослых бабочек нет», список рамок пустой. Не выделяйте листья, цветы, плоды и тени.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415144785",
+        "license_code": "cc0",
+        "observer_login": "ethologist"
+      }
+    },
+    {
+      "photo_id": "763479533",
+      "section": "02_bbox_exam",
+      "slot": 1,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763479533/original.jpg",
+      "local_file": "additional_66/02_bbox_exam/763479533.jpg",
+      "sha256": "14e64b06a1243f67d1d41d06189cd4cdd65acbcd60461128769f8c4a9c961b81",
+      "width": 2048,
+      "height": 1356,
+      "scenario": "Обычная бабочка",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.18122775227304372,
+            "top": 0.15507589537728153,
+            "width": 0.6303079415241015,
+            "height": 0.6577259612369065
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414704140",
+        "license_code": "cc0",
+        "observer_login": "ruebezahl"
+      }
+    },
+    {
+      "photo_id": "763057603",
+      "section": "02_bbox_exam",
+      "slot": 2,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763057603/original.jpg",
+      "local_file": "additional_66/02_bbox_exam/763057603.jpg",
+      "sha256": "77168b27f220124b6ca3afda2eeb5f81615feebb9d6f406cd6129334f1632f8d",
+      "width": 2048,
+      "height": 1366,
+      "scenario": "Мотылёк или моль",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.14218668867995432,
+            "top": 0.21817568838988896,
+            "width": 0.7961400820501161,
+            "height": 0.5071583139936023
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414493113",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      }
+    },
+    {
+      "photo_id": "763753993",
+      "section": "02_bbox_exam",
+      "slot": 3,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763753993/original.jpg",
+      "local_file": "additional_66/02_bbox_exam/763753993.jpg",
+      "sha256": "58e76f63330899fa7467256590bc4888738525040145a0a4baad1f99ade7d3d2",
+      "width": 1633,
+      "height": 1376,
+      "scenario": "Сложенные крылья",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.14084360604309945,
+            "top": 0.1494543059650004,
+            "width": 0.6354143064551112,
+            "height": 0.6987706203349433
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414836670",
+        "license_code": "cc0",
+        "observer_login": "hhkaaks"
+      }
+    },
+    {
+      "photo_id": "380522900",
+      "section": "02_bbox_exam",
+      "slot": 4,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/380522900/original.jpeg",
+      "local_file": "additional_66/02_bbox_exam/380522900.jpg",
+      "sha256": "f89e0cb6dfb3a59e01d2dd5d3d0cd3561f6861aebe1a8eea055df6f458142dd2",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Несколько бабочек",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.17961905956637172,
+            "top": 0.29818729222856416,
+            "width": 0.5299609023814005,
+            "height": 0.27198457003073445
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.26106546237638223,
+            "top": 0.5325299504484726,
+            "width": 0.4008969453678733,
+            "height": 0.25970645424324146
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/215239586",
+        "license_code": "cc0",
+        "observer_login": "andrewdeacon"
+      }
+    },
+    {
+      "photo_id": "763187205",
+      "section": "02_bbox_exam",
+      "slot": 5,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763187205/original.jpg",
+      "local_file": "additional_66/02_bbox_exam/763187205.jpg",
+      "sha256": "9e9e7c389a9c888269222992c145ee40a4218d1214831c1765abec67e752f16d",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Перекрытие",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.06938259215120517,
+            "top": 0.3152167095276924,
+            "width": 0.8264651153066129,
+            "height": 0.3964592611177317
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414557413",
+        "license_code": "cc0",
+        "observer_login": "kuykenwil"
+      }
+    },
+    {
+      "photo_id": "364883207",
+      "section": "02_bbox_exam",
+      "slot": 6,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/364883207/original.jpg",
+      "local_file": "additional_66/02_bbox_exam/364883207.jpg",
+      "sha256": "7b2fe893b5a4328083ce2e1d7e4dd80e178247a95c9dbdf1cc68dae80f7ab74c",
+      "width": 1656,
+      "height": 1816,
+      "scenario": "Явная обрезка границей фотографии",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.18755001352569128,
+            "top": 0,
+            "width": 0.8124499864743087,
+            "height": 0.8855767421438875
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/206293699",
+        "license_code": "cc0",
+        "observer_login": "aparrot1"
+      }
+    },
+    {
+      "photo_id": "764215661",
+      "section": "02_bbox_exam",
+      "slot": 7,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764215661/original.jpg",
+      "local_file": "additional_66/02_bbox_exam/764215661.jpg",
+      "sha256": "5f520b34f0be4cd0d7c0f4f6639d682d7f5ff315ae3ecc27e5049e48df092bcc",
+      "width": 1536,
+      "height": 1536,
+      "scenario": "Похожее насекомое",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415063320",
+        "license_code": "cc0",
+        "observer_login": "cowirrie"
+      }
+    },
+    {
+      "photo_id": "764379390",
+      "section": "02_bbox_exam",
+      "slot": 8,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764379390/original.jpg",
+      "local_file": "additional_66/02_bbox_exam/764379390.jpg",
+      "sha256": "c56641a3969ac081c2e2232521e306744e615735ab66e8489f5e15f8b575ab3c",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Растение без бабочек",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415143806",
+        "license_code": "cc0",
+        "observer_login": "ethologist"
+      }
+    },
+    {
+      "photo_id": "763974284",
+      "section": "03_review_training",
+      "slot": 1,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763974284/original.jpg",
+      "local_file": "additional_66/03_review_training/763974284.jpg",
+      "sha256": "46e87f0c1ec8d4dcbb28549e73dc2ed1eff1e8d056117635196b1aba819a6bb0",
+      "width": 800,
+      "height": 645,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2248190847221106,
+            "top": 0.1554130339333876,
+            "width": 0.43311979591356714,
+            "height": 0.40618139622404825
+          }
+        ]
+      },
+      "training_hint": "Правильный вердикт — «Требует исправления». Рамка заметно отрезает переднюю часть бабочки и видимые усики; это существенная ошибка границ. Небольшая неточность в несколько пикселей сама по себе не повод отклонять ответ, если все различимые части охвачены и нет большого запаса фона.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414946517",
+        "license_code": "cc0",
+        "observer_login": "simontonge"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.33495592965405563,
+            "top": 0.18381891739321327,
+            "width": 0.3328885031832153,
+            "height": 0.3295333375148967
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    },
+    {
+      "photo_id": "763489544",
+      "section": "03_review_training",
+      "slot": 2,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763489544/original.jpg",
+      "local_file": "additional_66/03_review_training/763489544.jpg",
+      "sha256": "5ea0bfde4c922bc241a1df90a245644bfa72fd0ff57f9142060dd2f3712100a5",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.23,
+            "top": 0.08,
+            "width": 0.495,
+            "height": 0.807
+          }
+        ]
+      },
+      "training_hint": "Правильный вердикт — «Разметка верна». Взрослый мотылёк выделен одной рамкой вместе с видимыми усиками. Небольшой технический зазор и незначительная неточность границы допустимы: от ревьюера не требуется точное совпадение с координатами составителя.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414709013",
+        "license_code": "cc0",
+        "observer_login": "simon_oliver"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.23,
+            "top": 0.08,
+            "width": 0.495,
+            "height": 0.807
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "764372011",
+      "section": "03_review_training",
+      "slot": 3,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764372011/original.jpg",
+      "local_file": "additional_66/03_review_training/764372011.jpg",
+      "sha256": "855ff1110614a2b018e7c15c12520c8028c84fc75dde7bd07bac8468a2ff5fa1",
+      "width": 1506,
+      "height": 1003,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "Правильный вердикт — «Требует исправления». На фото жук, а не взрослая бабочка. Рамка вокруг него лишняя. Для этой фотографии правильная разметка должна быть пустой.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415140243",
+        "license_code": "cc0",
+        "observer_login": "ruebezahl"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.27244145022390104,
+            "top": 0.2429436116163834,
+            "width": 0.4956953375733722,
+            "height": 0.5958806372702754
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "763915339",
+      "section": "03_review_training",
+      "slot": 4,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763915339/original.jpg",
+      "local_file": "additional_66/03_review_training/763915339.jpg",
+      "sha256": "77cb61d832820886247b2f518b7ba38a72c615cd45012c34aa5952a8d5d6dbee",
+      "width": 1548,
+      "height": 1161,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2993104493596327,
+            "top": 0.1773427209433607,
+            "width": 0.3921176221539233,
+            "height": 0.6368704133475507
+          }
+        ]
+      },
+      "training_hint": "Правильный вердикт — «Требует исправления». Помимо рамки вокруг бабочки добавлена лишняя рамка в левом верхнем углу, где находится деталь фона. Проверяйте каждую рамку и всю фотографию: наличие одной правильно выделенной бабочки не делает весь ответ верным.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414918208",
+        "license_code": "cc0",
+        "observer_login": "oerknal"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2802111581346437,
+            "top": 0.16187354952016558,
+            "width": 0.4270702659474377,
+            "height": 0.6583610361914318
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.12970427423575384,
+            "top": 0,
+            "width": 0.17788567082732246,
+            "height": 0.21183277927617128
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "764367118",
+      "section": "03_review_training",
+      "slot": 5,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764367118/original.jpg",
+      "local_file": "additional_66/03_review_training/764367118.jpg",
+      "sha256": "a8ddbfa307fbecd936cac8215705db1c936e37b277edf9f9e716741855002d32",
+      "width": 2048,
+      "height": 1366,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "Правильный вердикт — «Разметка верна». На фото другое насекомое, взрослых бабочек нет. Пустой список рамок здесь является полноценным правильным ответом.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415137938",
+        "license_code": "cc0",
+        "observer_login": "ruebezahl"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763905764",
+      "section": "03_review_training",
+      "slot": 6,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763905764/original.jpg",
+      "local_file": "additional_66/03_review_training/763905764.jpg",
+      "sha256": "9d4f8c1a6b3c7427d1b701719d6821ad43a7bdb30afe8823a620aa81068eaf96",
+      "width": 1479,
+      "height": 1109,
+      "scenario": "Пропущенный объект",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.27667448133451433,
+            "top": 0.18648466411591294,
+            "width": 0.45829143818090623,
+            "height": 0.6914084551213701
+          }
+        ]
+      },
+      "training_hint": "Правильный вердикт — «Требует исправления». На фото есть взрослая бабочка, но в предъявленном ответе нет ни одной рамки. Объект пропущен. Пустой ответ допустим только на фотографиях без взрослых бабочек.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414912010",
+        "license_code": "cc0",
+        "observer_login": "oerknal"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "missing": true
+        }
+      }
+    },
+    {
+      "photo_id": "294852448",
+      "section": "03_review_training",
+      "slot": 7,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/294852448/original.jpeg",
+      "local_file": "additional_66/03_review_training/294852448.jpg",
+      "sha256": "aefad476898ac7c6f0383d5a13d9f0404801ec28adc40702620eca41b0146e2a",
+      "width": 1814,
+      "height": 1814,
+      "scenario": "Пропущенный объект",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.21374584457128523,
+            "top": 0.33543718246252274,
+            "width": 0.29017437119739087,
+            "height": 0.31560873110456
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.4952330176252902,
+            "top": 0.41130119801793896,
+            "width": 0.3869331367998495,
+            "height": 0.3588957536222792
+          }
+        ]
+      },
+      "training_hint": "Правильный вердикт — «Требует исправления». На фотографии две взрослые бабочки, а выделена только левая. Правая бабочка пропущена. Осматривайте весь кадр, включая области за пределами уже нарисованных рамок.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/170035484",
+        "license_code": "cc0",
+        "observer_login": "truthseqr"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2155177820987268,
+            "top": 0.33372796838738,
+            "width": 0.280483597817224,
+            "height": 0.3319638712914759
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "missing": true
+        }
+      }
+    },
+    {
+      "photo_id": "763890362",
+      "section": "03_review_training",
+      "slot": 8,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763890362/original.jpg",
+      "local_file": "additional_66/03_review_training/763890362.jpg",
+      "sha256": "daf3981d47fd164d651eddae699c4aff981fbae16d47e920f095b169e3ac68cc",
+      "width": 1479,
+      "height": 1109,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.20596776805486527,
+            "top": 0.018942482594242003,
+            "width": 0.6912996591940942,
+            "height": 0.8968748039892118
+          }
+        ]
+      },
+      "training_hint": "Правильный вердикт — «Разметка верна». Бабочка, её видимые усики и лапки охвачены рамкой. Небольшой запас фона вокруг силуэта допустим. Отклонять нужно за существенную обрезку видимых частей или очевидно чрезмерный запас, а не за небольшое отличие координат.",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414903829",
+        "license_code": "cc0",
+        "observer_login": "oerknal"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.20596776805486527,
+            "top": 0.018942482594242003,
+            "width": 0.6912996591940942,
+            "height": 0.8968748039892118
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763859604",
+      "section": "04_review_exam",
+      "slot": 1,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763859604/original.jpg",
+      "local_file": "additional_66/04_review_exam/763859604.jpg",
+      "sha256": "0b036142375dfe3234c4a461f603dda8411da4e7558911f2a2e519ef37ceb436",
+      "width": 652,
+      "height": 639,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.05679621363645138,
+            "top": 0.15866681302138871,
+            "width": 0.7711305642532504,
+            "height": 0.6915731041836544
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414887551",
+        "license_code": "cc0",
+        "observer_login": "aparrot1"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.025783170236824936,
+            "top": 0,
+            "width": 0.974216829763175,
+            "height": 0.963604716803613
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    },
+    {
+      "photo_id": "763323136",
+      "section": "04_review_exam",
+      "slot": 2,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763323136/original.jpg",
+      "local_file": "additional_66/04_review_exam/763323136.jpg",
+      "sha256": "23ae1323cf984777cefd7651788f7a585a313cea5f9344591c6fa828f4284ff6",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.49169959647912326,
+            "top": 0.11276108637019372,
+            "width": 0.30081122331639804,
+            "height": 0.6857476635514017
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414625592",
+        "license_code": "cc0",
+        "observer_login": "twsummer"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.11875640301908863,
+            "top": 0,
+            "width": 0.8812435969809114,
+            "height": 0.9296164460891925
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    },
+    {
+      "photo_id": "763734745",
+      "section": "04_review_exam",
+      "slot": 3,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763734745/original.jpg",
+      "local_file": "additional_66/04_review_exam/763734745.jpg",
+      "sha256": "e60029a882386aafb8f348107ee0ac30decf4fa0b844dc62781078cdd36146a2",
+      "width": 1768,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.308,
+            "top": 0.38,
+            "width": 0.417,
+            "height": 0.28700000000000003
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414827098",
+        "license_code": "cc0",
+        "observer_login": "daveman1"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.308,
+            "top": 0.38,
+            "width": 0.417,
+            "height": 0.28700000000000003
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763546543",
+      "section": "04_review_exam",
+      "slot": 4,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763546543/original.jpg",
+      "local_file": "additional_66/04_review_exam/763546543.jpg",
+      "sha256": "54f0dae5b2300b3d27789734e746032db74fd1e6cdb26edc011bd0aa4767bffd",
+      "width": 1537,
+      "height": 2048,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.3140101706669631,
+            "top": 0.25540989776077266,
+            "width": 0.47391212456575654,
+            "height": 0.4103289845073072
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414736444",
+        "license_code": "cc0",
+        "observer_login": "acroceph"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.37806138499830483,
+            "top": 0.47433826757824743,
+            "width": 0.3570612303729564,
+            "height": 0.21251489681992092
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    },
+    {
+      "photo_id": "764329095",
+      "section": "04_review_exam",
+      "slot": 5,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764329095/original.jpg",
+      "local_file": "additional_66/04_review_exam/764329095.jpg",
+      "sha256": "d545133780430bfefed8482e402f2c0a3527666022746b303c9b70d9b254d1aa",
+      "width": 2048,
+      "height": 1365,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415119011",
+        "license_code": "cc0",
+        "observer_login": "ruebezahl"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "764328073",
+      "section": "04_review_exam",
+      "slot": 6,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764328073/original.jpg",
+      "local_file": "additional_66/04_review_exam/764328073.jpg",
+      "sha256": "5c291f885ebe06beb6cf8de86d92afa6b32c1c10247d1071d8a55a52775f6730",
+      "width": 2048,
+      "height": 1357,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415118536",
+        "license_code": "cc0",
+        "observer_login": "ruebezahl"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.3397846201585795,
+            "top": 0.16258702879006462,
+            "width": 0.32756358605290153,
+            "height": 0.7723922724706768
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "763513481",
+      "section": "04_review_exam",
+      "slot": 7,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763513481/original.jpg",
+      "local_file": "additional_66/04_review_exam/763513481.jpg",
+      "sha256": "3fb4d7c2e58e500d089cab81920cb97ce321bf5d714c416b8e9d53f78d41a7e5",
+      "width": 2048,
+      "height": 1638,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2597400509996336,
+            "top": 0.10688076271718,
+            "width": 0.46140648643801363,
+            "height": 0.651006711409396
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414720708",
+        "license_code": "cc0",
+        "observer_login": "dixiesommers"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2597400509996336,
+            "top": 0.10688076271718,
+            "width": 0.46140648643801363,
+            "height": 0.651006711409396
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "764268878",
+      "section": "04_review_exam",
+      "slot": 8,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764268878/original.jpg",
+      "local_file": "additional_66/04_review_exam/764268878.jpg",
+      "sha256": "4f5bbbf2008c838f77bf20812ade95851f2eeb3325a40ad0d41ee9e3d6727a89",
+      "width": 2048,
+      "height": 1365,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415089899",
+        "license_code": "cc0",
+        "observer_login": "ruebezahl"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.34678833776111617,
+            "top": 0.16267327353697553,
+            "width": 0.3816574107207611,
+            "height": 0.5733393966003888
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "763530254",
+      "section": "04_review_exam",
+      "slot": 9,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763530254/original.jpg",
+      "local_file": "additional_66/04_review_exam/763530254.jpg",
+      "sha256": "6769f4534e53a7d7b0e1aa0a20756c45686ecff39ce8b8b9d88fd06ccd27fad3",
+      "width": 1152,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.14,
+            "top": 0.288,
+            "width": 0.53,
+            "height": 0.305
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414710049",
+        "license_code": "cc0",
+        "observer_login": "meleblanc"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.14,
+            "top": 0.288,
+            "width": 0.53,
+            "height": 0.305
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "285196861",
+      "section": "04_review_exam",
+      "slot": 10,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/285196861/original.jpeg",
+      "local_file": "additional_66/04_review_exam/285196861.jpg",
+      "sha256": "219d2d716dffa141d60d4dde3e4d23dec49250177a7e28f54e22384836608a3e",
+      "width": 1167,
+      "height": 1167,
+      "scenario": "Пропущенный объект",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.20548202973091625,
+            "top": 0.303597189989337,
+            "width": 0.39634165464467175,
+            "height": 0.2671078216145017
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.6007652261180454,
+            "top": 0.37391802044784545,
+            "width": 0.21122122561625778,
+            "height": 0.2929498839616132
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/164805350",
+        "license_code": "cc0",
+        "observer_login": "truthseqr"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.20558395534090199,
+            "top": 0.303330615317067,
+            "width": 0.4010380731355452,
+            "height": 0.27545788120178144
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "missing": true
+        }
+      }
+    },
+    {
+      "photo_id": "763478388",
+      "section": "04_review_exam",
+      "slot": 11,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763478388/original.jpg",
+      "local_file": "additional_66/04_review_exam/763478388.jpg",
+      "sha256": "d2c255e8d6886608e8d4e461e8eeb6af9e128819ba8f0d7a6281cbd9f93994ea",
+      "width": 601,
+      "height": 649,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.047,
+            "top": 0.205,
+            "width": 0.868,
+            "height": 0.6950000000000001
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414703541",
+        "license_code": "cc0",
+        "observer_login": "aparrot1"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.047,
+            "top": 0.205,
+            "width": 0.868,
+            "height": 0.6950000000000001
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763404371",
+      "section": "04_review_exam",
+      "slot": 12,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763404371/original.jpg",
+      "local_file": "additional_66/04_review_exam/763404371.jpg",
+      "sha256": "93724728ce12d33d1a120519ef55b407f74aee1855ba4a6c66581fdce02b9607",
+      "width": 945,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.23778334655835737,
+            "top": 0.2650693094147902,
+            "width": 0.5352061427831354,
+            "height": 0.3123549520165588
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414665284",
+        "license_code": "cc0",
+        "observer_login": "mattnewnham"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.23778334655835737,
+            "top": 0.2650693094147902,
+            "width": 0.5352061427831354,
+            "height": 0.3123549520165588
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763266342",
+      "section": "05_review_control",
+      "slot": 1,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763266342/original.jpg",
+      "local_file": "additional_66/05_review_control/763266342.jpg",
+      "sha256": "68bdc9ec5f2de3d691a4fe140218db3f5b92cf87cdcd0293c9590b378ff3f24d",
+      "width": 2048,
+      "height": 1152,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4483384203747825,
+            "top": 0.3761682242990655,
+            "width": 0.14082346092328918,
+            "height": 0.3150834221915574
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414597894",
+        "license_code": "cc0",
+        "observer_login": "jazz_vaughan"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4483384203747825,
+            "top": 0.3761682242990655,
+            "width": 0.14082346092328918,
+            "height": 0.3150834221915574
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763364717",
+      "section": "05_review_control",
+      "slot": 2,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763364717/original.jpg",
+      "local_file": "additional_66/05_review_control/763364717.jpg",
+      "sha256": "e2cc8964afcfc505177e047b12bd51adc8d3aae7b9db433cfbb91b2bb822e7a3",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.41881626695983354,
+            "top": 0.34568462648184156,
+            "width": 0.12253418428150287,
+            "height": 0.3365897258985135
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414647832",
+        "license_code": "cc0",
+        "observer_login": "sturuss"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.41881626695983354,
+            "top": 0.34568462648184156,
+            "width": 0.12253418428150287,
+            "height": 0.3365897258985135
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763364713",
+      "section": "05_review_control",
+      "slot": 3,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763364713/original.jpg",
+      "local_file": "additional_66/05_review_control/763364713.jpg",
+      "sha256": "1d5437eb0e0ed38f09b5a27bb172de0ad764ba16837eeea8d8340f474722a76a",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.3290531263965769,
+            "top": 0.282114407576993,
+            "width": 0.35153750862447475,
+            "height": 0.4199021514144139
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414647831",
+        "license_code": "cc0",
+        "observer_login": "sturuss"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.41026039604469833,
+            "top": 0.34836605406761584,
+            "width": 0.27025379476886413,
+            "height": 0.351533588408706
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    },
+    {
+      "photo_id": "763847661",
+      "section": "05_review_control",
+      "slot": 4,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763847661/original.jpg",
+      "local_file": "additional_66/05_review_control/763847661.jpg",
+      "sha256": "76ff01662bda4ee5ffe231b57557a632b2db983e259d4c628522ee44ebcc91ec",
+      "width": 888,
+      "height": 985,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.07900159782564685,
+            "top": 0.1634494762591733,
+            "width": 0.8514240695879974,
+            "height": 0.6232594241987077
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414881830",
+        "license_code": "cc0",
+        "observer_login": "aparrot1"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.07900159782564685,
+            "top": 0.1634494762591733,
+            "width": 0.8514240695879974,
+            "height": 0.6232594241987077
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763058682",
+      "section": "05_review_control",
+      "slot": 5,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763058682/original.jpg",
+      "local_file": "additional_66/05_review_control/763058682.jpg",
+      "sha256": "2bb9cb0cbd1f6a5d3fcd1e57276250f20d6a7f5a439cd260fed54e0587e4449e",
+      "width": 2048,
+      "height": 1366,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.302,
+            "top": 0.265,
+            "width": 0.288,
+            "height": 0.595
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414494347",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.302,
+            "top": 0.265,
+            "width": 0.288,
+            "height": 0.595
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "763058658",
+      "section": "05_review_control",
+      "slot": 6,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763058658/original.jpg",
+      "local_file": "additional_66/05_review_control/763058658.jpg",
+      "sha256": "d6a6e67ebbe4e422d122fa71809d5258dc6f5b899c724c3272310c421ac8d9c0",
+      "width": 2048,
+      "height": 1366,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4445253822141465,
+            "top": 0.4554349871416923,
+            "width": 0.10072029677013428,
+            "height": 0.11293357586401565
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414494345",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.1980901140419863,
+            "top": 0.25654676033368873,
+            "width": 0.6547080765387828,
+            "height": 0.5454039390328045
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    },
+    {
+      "photo_id": "763057655",
+      "section": "05_review_control",
+      "slot": 7,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/763057655/original.jpg",
+      "local_file": "additional_66/05_review_control/763057655.jpg",
+      "sha256": "489b222252d3e29279f2d5af2bfa5d0cb5b10f8e697331510b830f74adb627a9",
+      "width": 2048,
+      "height": 1366,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4685915715047051,
+            "top": 0.25326161951953835,
+            "width": 0.19315705511431336,
+            "height": 0.5688311484664117
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414493118",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4685915715047051,
+            "top": 0.25326161951953835,
+            "width": 0.19315705511431336,
+            "height": 0.5688311484664117
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762681770",
+      "section": "05_review_control",
+      "slot": 8,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762681770/original.jpg",
+      "local_file": "additional_66/05_review_control/762681770.jpg",
+      "sha256": "170e74ea1b65a6dbe5f3ebff509274af908cd190134cc699e83acc931ae2d92f",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.28030065441468555,
+            "top": 0.2868970708147776,
+            "width": 0.4321645863388319,
+            "height": 0.36332559744088305
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414306849",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.28030065441468555,
+            "top": 0.2868970708147776,
+            "width": 0.4321645863388319,
+            "height": 0.36332559744088305
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762680274",
+      "section": "05_review_control",
+      "slot": 9,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762680274/original.jpg",
+      "local_file": "additional_66/05_review_control/762680274.jpg",
+      "sha256": "c3a99d6b47aa901d8bb8f9acdd939053ab2f5f9c65a10f719ad65f7527edc95d",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.392,
+            "top": 0.287,
+            "width": 0.371,
+            "height": 0.26300000000000007
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414306113",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.392,
+            "top": 0.287,
+            "width": 0.371,
+            "height": 0.26300000000000007
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762672181",
+      "section": "05_review_control",
+      "slot": 10,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762672181/original.jpg",
+      "local_file": "additional_66/05_review_control/762672181.jpg",
+      "sha256": "845daeb258568c937e0c4b912bbd0a9355385fa05387cb6ad216deb7fb958853",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.1287189780258838,
+            "top": 0.42334410085931123,
+            "width": 0.626962721361517,
+            "height": 0.16743241548014792
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414302062",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.1288653327479142,
+            "top": 0.4169933513140563,
+            "width": 0.636768487737565,
+            "height": 0.17680173116728332
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.4741056681093057,
+            "top": 0.696873235902904,
+            "width": 0.21954253695456732,
+            "height": 0.11496424763218971
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.1396328587258774,
+            "top": 0.8327949570344351,
+            "width": 0.14767191452884246,
+            "height": 0.100710343097284
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.7468795082481338,
+            "top": 0.07893746471805801,
+            "width": 0.11657153609734683,
+            "height": 0.06950542557862383
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "764268727",
+      "section": "05_review_control",
+      "slot": 11,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764268727/original.jpg",
+      "local_file": "additional_66/05_review_control/764268727.jpg",
+      "sha256": "adfc7f4756e65b71efc243aa0cef6a692b74a1be79d264b780f0456fc57b11fd",
+      "width": 1880,
+      "height": 1254,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415089845",
+        "license_code": "cc0",
+        "observer_login": "ruebezahl"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.3582532483731522,
+            "top": 0.25352035376027093,
+            "width": 0.2772073150225337,
+            "height": 0.5213181333500595
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "764183077",
+      "section": "05_review_control",
+      "slot": 12,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764183077/original.jpg",
+      "local_file": "additional_66/05_review_control/764183077.jpg",
+      "sha256": "e1d97612a3f1652ef78f5221ab5ccc39d93a496c08c6ad85e3ad559fe1887d73",
+      "width": 1350,
+      "height": 2048,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415047772",
+        "license_code": "cc0",
+        "observer_login": "silverbird"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.3889554686719586,
+            "top": 0.17044314119049103,
+            "width": 0.19759876039873503,
+            "height": 0.6688123314307219
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "764099073",
+      "section": "05_review_control",
+      "slot": 13,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764099073/original.jpg",
+      "local_file": "additional_66/05_review_control/764099073.jpg",
+      "sha256": "427249df012e4ba5a8334186779aab9dd760303a29cd79dba89e73f6cf346240",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415008605",
+        "license_code": "cc0",
+        "observer_login": "drew_baxter"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "764096028",
+      "section": "05_review_control",
+      "slot": 14,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764096028/original.jpg",
+      "local_file": "additional_66/05_review_control/764096028.jpg",
+      "sha256": "086a95692bdd0a76701d909fd490e198e60541fdea1ab4c31c37d97243bcc531",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415007346",
+        "license_code": "cc0",
+        "observer_login": "drew_baxter"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "764018931",
+      "section": "05_review_control",
+      "slot": 15,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764018931/original.jpg",
+      "local_file": "additional_66/05_review_control/764018931.jpg",
+      "sha256": "843d24eea800069d4021941cff01bb9227a2950d0ebea7b60ef2a189f300924e",
+      "width": 2048,
+      "height": 1675,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414968411",
+        "license_code": "cc0",
+        "observer_login": "drew_baxter"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2597699506006299,
+            "top": 0.16600545694035002,
+            "width": 0.5312725029573128,
+            "height": 0.605924230069623
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "762668953",
+      "section": "05_review_control",
+      "slot": 16,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762668953/original.jpg",
+      "local_file": "additional_66/05_review_control/762668953.jpg",
+      "sha256": "3ed66a84c5b4f81ea29be229740142ee7a306f0975d54cbc4901270ad871c95c",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.09517238495473428,
+            "top": 0.38053534466537026,
+            "width": 0.45363691484245966,
+            "height": 0.4409380292291288
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414300426",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.09517238495473428,
+            "top": 0.38053534466537026,
+            "width": 0.45363691484245966,
+            "height": 0.4409380292291288
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762666442",
+      "section": "05_review_control",
+      "slot": 17,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762666442/original.jpg",
+      "local_file": "additional_66/05_review_control/762666442.jpg",
+      "sha256": "2cd99559e923339e9a4b5a3f0cad7ee6f45aee0863be46172b9e091aa4cd653b",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4054862112944028,
+            "top": 0.47687856739634943,
+            "width": 0.1166865290932278,
+            "height": 0.0655460076522611
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414299188",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.21974116122017998,
+            "top": 0.44194160446590974,
+            "width": 0.78025883877982,
+            "height": 0.5580583955340903
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    },
+    {
+      "photo_id": "762666185",
+      "section": "05_review_control",
+      "slot": 18,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762666185/original.jpg",
+      "local_file": "additional_66/05_review_control/762666185.jpg",
+      "sha256": "b764c40afc56ebef77f63301c6ad04a523e8ed202a77ef0deb612795f29b04ff",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.1493236321060444,
+            "top": 0.31040268456375836,
+            "width": 0.6389010851157246,
+            "height": 0.5013955968136485
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414299077",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.1493236321060444,
+            "top": 0.31040268456375836,
+            "width": 0.6389010851157246,
+            "height": 0.5013955968136485
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "764006237",
+      "section": "05_review_control",
+      "slot": 19,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764006237/original.jpg",
+      "local_file": "additional_66/05_review_control/764006237.jpg",
+      "sha256": "9f83de676f0346cbdbd74e0c8bc475efa8de2f536c907a8e34c81a54df1c41ad",
+      "width": 1616,
+      "height": 1448,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414961593",
+        "license_code": "cc0",
+        "observer_login": "roger86656"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "764244023",
+      "section": "05_review_control",
+      "slot": 20,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764244023/original.jpg",
+      "local_file": "additional_66/05_review_control/764244023.jpg",
+      "sha256": "72b73d0be1359c798ddef081372c7496a4f1f9f570cf743cb224b6358be5a841",
+      "width": 1047,
+      "height": 1143,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415077437",
+        "license_code": "cc0",
+        "observer_login": "silverbird"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.26373687553321684,
+            "top": 0.34914225678981375,
+            "width": 0.38913259126756544,
+            "height": 0.33742865207301015
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "764197034",
+      "section": "05_review_control",
+      "slot": 21,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/764197034/original.jpg",
+      "local_file": "additional_66/05_review_control/764197034.jpg",
+      "sha256": "926678cc01d37524ad08e13a80db499ae51006ab5028133ce932e33bc923cb6f",
+      "width": 1294,
+      "height": 1314,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "empty",
+        "regions": []
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/415053463",
+        "license_code": "cc0",
+        "observer_login": "silverbird"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762665997",
+      "section": "05_review_control",
+      "slot": 22,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762665997/original.jpg",
+      "local_file": "additional_66/05_review_control/762665997.jpg",
+      "sha256": "4929f0c5dc044adda7492fd6c211d9aa0c7347c6c8b76fa96702c6a8c094ef86",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.31118150076313505,
+            "top": 0.2935300758953772,
+            "width": 0.33350059587279696,
+            "height": 0.3703819858244996
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414299010",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.31118150076313505,
+            "top": 0.2935300758953772,
+            "width": 0.33350059587279696,
+            "height": 0.3703819858244996
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762665197",
+      "section": "05_review_control",
+      "slot": 23,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762665197/original.jpg",
+      "local_file": "additional_66/05_review_control/762665197.jpg",
+      "sha256": "59a916f473726fed5da430d0844b065fe0455ce510873076eed2aef41470ba54",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Пропущенный объект",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.6353363022434086,
+            "top": 0.3447045725396725,
+            "width": 0.20899454305964993,
+            "height": 0.18225083108574286
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414298696",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "missing": true
+        }
+      }
+    },
+    {
+      "photo_id": "762664070",
+      "section": "05_review_control",
+      "slot": 24,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762664070/original.jpg",
+      "local_file": "additional_66/05_review_control/762664070.jpg",
+      "sha256": "92de4c876b7397ec5897f8fa4e2d8d6b259d1d05e00b30ba833a6a4c7d8fca08",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2812310522904511,
+            "top": 0.3157263375776202,
+            "width": 0.5433209977210479,
+            "height": 0.4461362353383929
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414298146",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.2812310522904511,
+            "top": 0.3157263375776202,
+            "width": 0.5433209977210479,
+            "height": 0.4461362353383929
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "581823917",
+      "section": "05_review_control",
+      "slot": 25,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/581823917/original.jpg",
+      "local_file": "additional_66/05_review_control/581823917.jpg",
+      "sha256": "6d56eb004d7b3d86ddbaf2b3453e1deff39a170b3ffb41092eb871165d89ef47",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Объединение объектов",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.3765014579527457,
+            "top": 0.1269130652951138,
+            "width": 0.1859534748792574,
+            "height": 0.34310512450605285
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.43571043681494237,
+            "top": 0.4088628238098225,
+            "width": 0.2884122342093709,
+            "height": 0.31099071692905983
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/321699452",
+        "license_code": "cc0",
+        "observer_login": "drew_baxter"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.38415763934896974,
+            "top": 0.16719720253402745,
+            "width": 0.3436696355767421,
+            "height": 0.529574107758891
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "merged": true
+        }
+      }
+    },
+    {
+      "photo_id": "390616794",
+      "section": "05_review_control",
+      "slot": 26,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/390616794/original.jpg",
+      "local_file": "additional_66/05_review_control/390616794.jpg",
+      "sha256": "09fe76c1c1efbe2a023ab8c91f369e71d91ab3246dcd77a4073566a403f3f502",
+      "width": 1881,
+      "height": 2048,
+      "scenario": "Лишняя рамка",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.021382661643855046,
+            "top": 0.29371824625227366,
+            "width": 0.2358044339445185,
+            "height": 0.1462632503292981
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.17446816698096734,
+            "top": 0.15869033431600071,
+            "width": 0.2954832811988402,
+            "height": 0.1425704070752054
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.26874555062804645,
+            "top": 0.2678134604528633,
+            "width": 0.19576813103752816,
+            "height": 0.21083704447092766
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.4411406758320267,
+            "top": 0.5531502853917079,
+            "width": 0.12257596448645475,
+            "height": 0.26406573417800905
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.7855040999829834,
+            "top": 0.4457755754876747,
+            "width": 0.1744182816621801,
+            "height": 0.21256977984068243
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.6051956159741458,
+            "top": 0.45322398544815895,
+            "width": 0.1278856831235866,
+            "height": 0.24458226180768988
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.6856865115199904,
+            "top": 0.5382299441761274,
+            "width": 0.24716654890596945,
+            "height": 0.3513924606410337
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/220613688",
+        "license_code": "cc0",
+        "observer_login": "aparrot1"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.021382661643855046,
+            "top": 0.29371824625227366,
+            "width": 0.2358044339445185,
+            "height": 0.1462632503292981
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.17446816698096734,
+            "top": 0.15869033431600071,
+            "width": 0.2954832811988402,
+            "height": 0.1425704070752054
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.26874555062804645,
+            "top": 0.2678134604528633,
+            "width": 0.19576813103752816,
+            "height": 0.21083704447092766
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.4411406758320267,
+            "top": 0.5531502853917079,
+            "width": 0.12257596448645475,
+            "height": 0.26406573417800905
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.7855040999829834,
+            "top": 0.4457755754876747,
+            "width": 0.1744182816621801,
+            "height": 0.21256977984068243
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.6051956159741458,
+            "top": 0.45322398544815895,
+            "width": 0.1278856831235866,
+            "height": 0.24458226180768988
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.6856865115199904,
+            "top": 0.5382299441761274,
+            "width": 0.24716654890596945,
+            "height": 0.3513924606410337
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.5932103346774691,
+            "top": 0.4323449162641911,
+            "width": 0.3915960177510369,
+            "height": 0.4750674277112212
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "extra": true
+        }
+      }
+    },
+    {
+      "photo_id": "667490055",
+      "section": "05_review_control",
+      "slot": 27,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/667490055/original.jpg",
+      "local_file": "additional_66/05_review_control/667490055.jpg",
+      "sha256": "2aa5918e70e73457cc8e3a6637933e12e210efeae5ed0049f72aba201c4a2bb8",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.112,
+            "top": 0.214,
+            "width": 0.68,
+            "height": 0.687
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.29,
+            "top": 0,
+            "width": 0.502,
+            "height": 0.598
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/365592878",
+        "license_code": "cc0",
+        "observer_login": "meaningful_name"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.112,
+            "top": 0.214,
+            "width": 0.68,
+            "height": 0.687
+          },
+          {
+            "shape": "rectangle",
+            "left": 0.29,
+            "top": 0,
+            "width": 0.502,
+            "height": 0.598
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762662248",
+      "section": "05_review_control",
+      "slot": 28,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762662248/original.jpg",
+      "local_file": "additional_66/05_review_control/762662248.jpg",
+      "sha256": "574c409713b8af01242e1dad034f3e2787ba2eb3640ccb3c3819e1cd08d8cb4f",
+      "width": 1536,
+      "height": 2048,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4894520061050824,
+            "top": 0.49945901022392264,
+            "width": 0.10769616759706463,
+            "height": 0.1572084927554412
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414297211",
+        "license_code": "cc0",
+        "observer_login": "hanwen-zhang"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.4894520061050824,
+            "top": 0.49945901022392264,
+            "width": 0.10769616759706463,
+            "height": 0.1572084927554412
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762657203",
+      "section": "05_review_control",
+      "slot": 29,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762657203/original.jpg",
+      "local_file": "additional_66/05_review_control/762657203.jpg",
+      "sha256": "240cec24728ac890233050c29904342ed62e64078b111d912e14d0ec003ff3db",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Корректный пример",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.11525043869664586,
+            "top": 0.27742582951765665,
+            "width": 0.7513054318509691,
+            "height": 0.5139873298626356
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414294315",
+        "license_code": "cc0",
+        "observer_login": "twsummer"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.11525043869664586,
+            "top": 0.27742582951765665,
+            "width": 0.7513054318509691,
+            "height": 0.5139873298626356
+          }
+        ],
+        "expected_status": "accept",
+        "expected_reasons": {}
+      }
+    },
+    {
+      "photo_id": "762657130",
+      "section": "05_review_control",
+      "slot": 30,
+      "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/762657130/original.jpg",
+      "local_file": "additional_66/05_review_control/762657130.jpg",
+      "sha256": "799d9a1c45cdd51ba0d12d4ccf39766c3f459e8819693747dc31149ff6ffb2f2",
+      "width": 2048,
+      "height": 1536,
+      "scenario": "Существенная ошибка границ",
+      "complete": true,
+      "gold": {
+        "status": "objects",
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.13319718648564416,
+            "top": 0.26457536222793704,
+            "width": 0.7904389857617764,
+            "height": 0.33503732045411777
+          }
+        ]
+      },
+      "training_hint": "",
+      "note": "",
+      "source": {
+        "observation_url": "https://www.inaturalist.org/observations/414294288",
+        "license_code": "cc0",
+        "observer_login": "twsummer"
+      },
+      "review": {
+        "initialized": true,
+        "regions": [
+          {
+            "shape": "rectangle",
+            "left": 0.09905014703259263,
+            "top": 0.09389700809132535,
+            "width": 0.9009498529674074,
+            "height": 0.6987784607664805
+          }
+        ],
+        "expected_status": "reject",
+        "expected_reasons": {
+          "bounds": true
+        }
+      }
+    }
+  ]
+}

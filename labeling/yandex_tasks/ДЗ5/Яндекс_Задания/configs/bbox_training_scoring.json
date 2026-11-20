@@ -1,0 +1,9 @@
+{
+  "pool_id": "6870109",
+  "collection": "pools",
+  "skill_id": "21744",
+  "iou_threshold": 0.75,
+  "pass_count": 7,
+  "reference_file": "../Проверка_эталонов/annotations_reviewed.json",
+  "reference_sha256": "35b7ed2d8c5797e0bea6bed4248fb6f523a466ce4d32cfe7daaa74c1c9e44dfb"
+}

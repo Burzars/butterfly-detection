@@ -1,0 +1,892 @@
+{
+  "checked_at": "2026-11-18T18:30:44.026181+00:00",
+  "mode": "apply",
+  "pool_id": "6870108",
+  "iou_threshold": 0.75,
+  "pass_count": 7,
+  "results": [
+    {
+      "assignment_id": "000068d45c--6afddc40fbab195e3dd70afb",
+      "user_id": "81fc3d6a4bdd56f8a4d39ba6ce743edb",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9356564193407835
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9176262409792619
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9811498049116547
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9375033730022215
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8699696444434131
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "matched": 1,
+          "expected": 2,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9183999854347406
+            }
+          ],
+          "reason": "iou_matching"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    },
+    {
+      "assignment_id": "000068d45c--6afddca913c5a15cfd45c1c3",
+      "user_id": "ad87ef69ac0ed99b3113921f8fa18ec8",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9626200056797133
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.914191858150655
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.978574426580473
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9689637326841498
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8916067506405123
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "matched": 1,
+          "expected": 2,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8923415800076346
+            }
+          ],
+          "reason": "iou_matching"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    },
+    {
+      "assignment_id": "000068d45c--6afddcfa93859475ce72ec46",
+      "user_id": "6415fe45808aca9f8c567755a84f4dee",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9568139590173397
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9226849538990561
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9823934223674443
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.966728254676321
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9062246951200288
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "matched": 1,
+          "expected": 2,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9334570351484892
+            }
+          ],
+          "reason": "iou_matching"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    },
+    {
+      "assignment_id": "000068d45c--6afddd26ef0654541c862008",
+      "user_id": "7a403ad9c02f5767765953f66b4422dc",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.921160702130849
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8731387809336218
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9896100549405189
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.955756180837465
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8861038961317658
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "reason": "status_or_object_count"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    },
+    {
+      "assignment_id": "000068d45c--6afddd69ef0654541c8628ce",
+      "user_id": "6bf0608aa103e64d0f3b0454d35d4e5a",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.935292312455474
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9295477728331382
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.993141333078396
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9375033730022215
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8775164634618375
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "matched": 1,
+          "expected": 2,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9164145006032047
+            }
+          ],
+          "reason": "iou_matching"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    },
+    {
+      "assignment_id": "000068d45c--6afdddd9fbab195e3dd744dd",
+      "user_id": "cab17970379b65e159c8bd07df79fc01",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9388244086759175
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9262848987957493
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9950999697800201
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9503571732093646
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8813468209992595
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "matched": 1,
+          "expected": 2,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8896238718434398
+            }
+          ],
+          "reason": "iou_matching"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    },
+    {
+      "assignment_id": "000068d45c--6afddde4637bb6386690d945",
+      "user_id": "ffb435dee6566a95012fe01dd142ce99",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9334401798212044
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9418532964896611
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9755514536977327
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9672895541086463
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9084521063529893
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "matched": 1,
+          "expected": 2,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8556671301039823
+            }
+          ],
+          "reason": "iou_matching"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    },
+    {
+      "assignment_id": "000068d45c--6afdde1f7760fd2ec7009517",
+      "user_id": "c2191c41ff6320a67d66816e9c2f0df5",
+      "correct": 2,
+      "total": 8,
+      "passed": false,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": false,
+          "reason": "status_or_object_count"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": false,
+          "reason": "status_or_object_count"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": false,
+          "reason": "status_or_object_count"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": false,
+          "reason": "status_or_object_count"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": false,
+          "reason": "status_or_object_count"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "reason": "status_or_object_count"
+        }
+      ],
+      "payment_accepted": true
+    },
+    {
+      "assignment_id": "000068d45c--6afdde4013c5a15cfd45f92b",
+      "user_id": "18227f237a32037d16494cd9903d7c01",
+      "correct": 7,
+      "total": 8,
+      "passed": true,
+      "photos": [
+        {
+          "photo_id": "764215661",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763057603",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.839743201144942
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "764379390",
+          "correct": true,
+          "reason": "empty_match"
+        },
+        {
+          "photo_id": "763187205",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8386942885761992
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "364883207",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.9244474429476242
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763479533",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.8954495421845079
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "763753993",
+          "correct": true,
+          "matched": 1,
+          "expected": 1,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.7988408629685319
+            }
+          ],
+          "reason": "iou_matching"
+        },
+        {
+          "photo_id": "380522900",
+          "correct": false,
+          "matched": 1,
+          "expected": 2,
+          "pairs": [
+            {
+              "prediction": 0,
+              "reference": 0,
+              "iou": 0.7531646041078606
+            }
+          ],
+          "reason": "iou_matching"
+        }
+      ],
+      "payment_accepted": true,
+      "admission_verified": true
+    }
+  ],
+  "stop_reason": "started_exam_closed_and_all_attempts_settled",
+  "finished_at": "2026-11-18T18:31:05.733122+00:00"
+}

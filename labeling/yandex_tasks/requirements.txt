@@ -1,0 +1,6 @@
+# Verified authoring environment. Python 3.11.8, macOS arm64.
+# Grading, offline replay and unittest use only the standard library.
+# Certifi provides a CA bundle for HTTPS API calls.
+certifi==2026.10.19
+# Pillow is used only by historical instruction/reference image tools.
+Pillow==13.0.0

@@ -1,0 +1,18 @@
+{
+  "account_id": "6cf08dabc1685121c8ce951da950a23b",
+  "ids": {
+    "bbox_project": "11893",
+    "review_project": "11894",
+    "bbox_skill": "21627",
+    "bbox_training": "6870109",
+    "bbox_exam": "6870108",
+    "bbox_main": "6870107",
+    "review_skill": "21629",
+    "review_training": "6870548",
+    "review_exam": "6870571",
+    "review_main": "6870574",
+    "bbox_training_gate": "21744",
+    "review_training_gate": "21790"
+  },
+  "purpose": "ID bindings only, not an API object export or credentials"
+}
